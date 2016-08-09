@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title></title>
+  </head>
+  <body ng-app="entertainApp">
+
+    <div class="container">
+            <h1>Search for an Artist</h1>
+            <form id="search-form">
+                <input type="text" id="query" value="" class="form-control" />
+                <input type="submit" id="search" class="btn btn-primary" value="Search" />
+            </form>
+      <div id="results"></div>
+    </div>
+
+
+
+    <script id="results-template" type="text/x-handlebars-template">
+
+      <!--spotify:trackset:PREFREDTITLE:22 character long ID, plays 30-sec random clips from songs, NOT using user input...need to get user input and send it to iframe src-->
+        <!-- <iframe src="https://embed.spotify.com/?uri=spotify:trackset:PREFEREDTITLE:5Z7ygHQo02SUrFmcgpwsKW,1x6ACsKV4UdWS2FMuPFUiT,4bi73jCM02fMpkI11Lqmfe" frameborder="0" allowtransparency="true"></iframe> -->
+
+<!--getting spotify player onto results page-->
+        <iframe src="https://embed.spotify.com/?uri=spotify:user:spotify:playlist:4gWfh2NYhzzJ9NGP9D9fHE" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+
+        <a href="https://open.spotify.com/user/spotify/playlist/4gWfh2NYhzzJ9NGP9D9fHE">Click here for playlist</a>
+
+<!--displays album covers, HANDLEBARS FRAMEWORK-->
+        {{#each albums.items}}
+        <div style="background-image:url({{images.0.url}})" data-album-id="{{id}}" class="cover"></div>
+        {{/each}}
+
+    </script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/handlebarsjs/4.0.5/handlebars.min.js"></script>
+    <script src="app.js"></script>
+    <!-- <script src="controller.js"></script>
+    <script src="directives.js"></script> -->
+
+
+  </body>
+</html>
