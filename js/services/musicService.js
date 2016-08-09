@@ -6,6 +6,19 @@
 //
 // }]);
 
+
+// Simple GET request example:
+$http({
+  method: 'GET',
+  url: 'url: https://api.spotify.com/v1/albums/'
+}).then(function successCallback(response) {
+    // this callback will be called asynchronously
+    // when the response is available
+  }, function errorCallback(response) {
+    // called asynchronously if an error occurs
+    // or server returns response with an error status.
+  });
+
 // find template and compile it
 var templateSource = document.getElementById('results-template').innerHTML,
 
@@ -17,7 +30,7 @@ var templateSource = document.getElementById('results-template').innerHTML,
 //PLAYS SONGS ACCORDING TO ALBUM//
 var fetchTracks = function (albumId, callback) {
     $.ajax({
-        url: 'https://api.spotify.com/v1/albums/' + albumId,
+        // url: 'https://api.spotify.com/v1/albums/' + albumId,
         success: function (response) {
             callback(response);
         }
