@@ -7,15 +7,27 @@
 </head>
 <body ng-app='entertainApp'>
 
+	<nav>
+		<ul>
+			<a href="#/movies"><li>Movies</li></a>
+			<a href="#/music"><li>Music</li></a>
+			<a href="#/books"><li>Books</li></a>
+		</ul>
+	</nav>
 
-	
+<ng-view></ng-view>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/handlebarsjs/4.0.5/handlebars.min.js"></script>
 	<script src="js/app.js"></script>
 	<script src="js/services/moviesService.js"></script>
 	<script src="js/controllers/mainCtrl.js"></script>
 	<script src="js/controllers/moviesCtrl.js"></script>
+	<script src="js/controllers/musicCtrl.js"></script>
 	<script src="js/directives/moviesDirective.js"></script>
-	
+	<!-- <script src="js/directives/musicDirective.js"></script> -->
+
 </body>
 </html>
