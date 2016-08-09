@@ -10,11 +10,18 @@ app.config(function($routeProvider){
 		templateUrl:'partials/movies.html',
 		controller:'moviesCtrl'
 	})
+
 	.when('/books', {
 		templateUrl:'/partials/books.html',
 		controller:'moviesCtrl'
 	})
+	.when('/music', {
+		controller: 'musicCtrl',
+		templateUrl: '/partials/music.html'
+
+	})
 	.otherwise({
 		redirectTo:'/'
 	});
-});
+	});
+
