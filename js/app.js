@@ -10,6 +10,10 @@ app.config(function($routeProvider){
 		templateUrl:'/partials/movies.html',
 		controller:'moviesCtrl'
 	})
+	.when('/books', {
+		templateUrl:'/partials/books.html',
+		controller:'moviesCtrl'
+	})
 	.otherwise({
 		redirectTo:'/'
 	});
