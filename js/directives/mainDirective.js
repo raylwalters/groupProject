@@ -2,10 +2,10 @@
 
 var app = angular.module('entertainApp');
 
-app.directive('moviesDir',function(){
+app.directive('mainDirective',function(){
 	return{
 		restrict: 'AE',
-		templateUrl: 'partials/movies.html',
+		templateUrl: 'partials/home.html',
 		replace: false
 	};
 });

@@ -2,6 +2,6 @@
 
 var app = angular.module('entertainApp');
 
-app.controller('mainCtrl',['$scope', function($scope){
+app.factory('booksService',['$scope', function($scope){
 
 }]);
