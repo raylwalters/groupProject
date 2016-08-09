@@ -7,7 +7,7 @@ app.config(function($routeProvider){
 		controller:'mainCtrl'
 	})
 	.when('/movies',{
-		templateUrl:'/partials/movies.html',
+		templateUrl:'partials/movies.html',
 		controller:'moviesCtrl'
 	})
 	.otherwise({
