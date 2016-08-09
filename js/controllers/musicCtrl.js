@@ -1,7 +1,7 @@
 var app = angular.module('entertainApp');
 
 app.controller('musicCtrl', function($scope){
-  
+
 // find template and compile it
 var templateSource = document.getElementById('results-template').innerHTML,
 
@@ -9,12 +9,13 @@ var templateSource = document.getElementById('results-template').innerHTML,
     resultsPlaceholder = document.getElementById('results'),
     playingCssClass = 'playing',
     audioObject = null;
-
+$scope.resultsPlaceholder = '';
 //PLAYS SONGS ACCORDING TO ALBUM//
 var fetchTracks = function (albumId, callback) {
     $.ajax({
         url: 'https://api.spotify.com/v1/albums/' + albumId,
         success: function (response) {
+            console.log(response);
             callback(response);
         }
     });
@@ -23,13 +24,14 @@ var fetchTracks = function (albumId, callback) {
 //FINDS ALBUMS ACCORDING TO USER INPUT//
 var searchAlbums = function (query) {
     $.ajax({
-        url: 'https://api.spotify.com/v1/search',
+        url: 'https://api.spotify.com/v1/search/',
         data: {
             q: query,
             type: 'album'
         },
         success: function (response) {
-            resultsPlaceholder.innerHTML = template(response);
+            $scope.resultsPlaceholder = template(response);
+            console.log(response);
         }
     });
 };
@@ -48,7 +50,7 @@ results.addEventListener('click', function(e) {
             //WHEN YOU CLICK ON AN ALBUM COVER AND RANDOM SONG PLAYS//
             fetchTracks(target.getAttribute('data-album-id'), function(data) {
                 audioObject = new Audio(data.tracks.items[0].preview_url);
-                audioObject.play();
+                // audioObject.play();
                 target.classList.add(playingCssClass);
                 audioObject.addEventListener('ended', function() {
                     target.classList.remove(playingCssClass);

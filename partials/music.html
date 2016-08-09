@@ -16,14 +16,14 @@
         <!-- <iframe src="https://embed.spotify.com/?uri=spotify:trackset:PREFEREDTITLE:5Z7ygHQo02SUrFmcgpwsKW,1x6ACsKV4UdWS2FMuPFUiT,4bi73jCM02fMpkI11Lqmfe" frameborder="0" allowtransparency="true"></iframe> -->
 
 <!--getting spotify player onto results page-->
-        <iframe src="https://embed.spotify.com/?uri=spotify:user:spotify:playlist:4gWfh2NYhzzJ9NGP9D9fHE" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+        <iframe src="https://embed.spotify.com/?uri=user:spotify:playlist:5bMgwxIN2fNPSn3jjvRfE8" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
 
-        <a href="https://open.spotify.com/user/spotify/playlist/4gWfh2NYhzzJ9NGP9D9fHE">Click here for playlist</a>
+        <a href="https://open.spotify.com/user/spotify/playlist:5bMgwxIN2fNPSn3jjvRfE8">Click here for playlist</a>
 
 <!--displays album covers, HANDLEBARS FRAMEWORK-->
         {{#each albums.items}}
-        <div style="background-image:url({{images.0.url}})" data-album-id="{{id}}" class="cover"></div>
+        <div style="background-image:url({{images.0.url}})" data-album-id="{{id}}" class="cover">
+        </div>
         {{/each}}
 
     </script>
-    

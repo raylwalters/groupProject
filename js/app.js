@@ -15,7 +15,7 @@ app.config(function($routeProvider){
 
 	.when('/books', {
 		templateUrl:'/partials/books.html',
-		controller:'moviesCtrl'
+		controller:'booksCtrl'
 	})
 	.when('/music', {
 		controller: 'musicCtrl',
@@ -26,4 +26,3 @@ app.config(function($routeProvider){
 		redirectTo:'/'
 	});
 	});
-
