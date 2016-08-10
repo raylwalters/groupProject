@@ -19,15 +19,15 @@ function getUrl(){
 			console.log(response);
 			$scope.movies = response;
 
-		// 	$scope.movies.forEach(function(item,index){
-		// 	$scope.imageId = response.data.results[index].poster_path;
-		// 	$scope.image = "http://image.tmdb.org/t/p/w92/"+$scope.imageId;
+		$scope.movies.forEach(function(item,index){
+			$scope.imageId = response[index].poster_path;
+			$scope.image = "http://image.tmdb.org/t/p/w92/"+$scope.imageId;
 		// // 	// $scope.image = "http://image.tmdb.org/t/p/w92/";
 			
-		// console.log($scope.imageId);
-		// console.log($scope.image);
-		// });
+		console.log($scope.imageId);
+		console.log($scope.image);
 		});
+	});
 
 		
 	
