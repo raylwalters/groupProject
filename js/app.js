@@ -9,7 +9,7 @@ app.config(function($routeProvider){
 		// controller:'moviesCtrl'
 	})
 	.when('/movies',{
-		templateUrl:'partials/movies.html',
+		templateUrl:'/partials/movies.html',
 		controller:'moviesCtrl'
 	})
 

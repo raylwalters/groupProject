@@ -1,29 +1,15 @@
-
-    <div class="container">
-            <h1>Search for an Artist</h1>
-            <form id="search-form">
-                <input type="text" id="query" value="" class="form-control" />
-                <input type="submit" id="search" class="btn btn-primary" value="Search" />
-            </form>
-      <div id="results"></div>
-    </div>
-
+<div class="container">
+    <h1>Search for an Artist</h1>
+    <form id="search-form">
+        <input type="text" id="query" value="" class="form-control" />
+        <input type="submit" id="search" class="btn btn-primary" value="Search" />
+    </form>
+    <div id="results"></div>
+</div>
 
 
-    <script id="results-template" type="text/x-handlebars-template">
-
-      <!--spotify:trackset:PREFREDTITLE:22 character long ID, plays 30-sec random clips from songs, NOT using user input...need to get user input and send it to iframe src-->
-        <!-- <iframe src="https://embed.spotify.com/?uri=spotify:trackset:PREFEREDTITLE:5Z7ygHQo02SUrFmcgpwsKW,1x6ACsKV4UdWS2FMuPFUiT,4bi73jCM02fMpkI11Lqmfe" frameborder="0" allowtransparency="true"></iframe> -->
-
-<!--getting spotify player onto results page-->
-        <iframe src="https://embed.spotify.com/?uri=user:spotify:playlist:5bMgwxIN2fNPSn3jjvRfE8" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
-
-        <a href="https://open.spotify.com/user/spotify/playlist:5bMgwxIN2fNPSn3jjvRfE8">Click here for playlist</a>
-
-<!--displays album covers, HANDLEBARS FRAMEWORK-->
-        {{#each albums.items}}
-        <div style="background-image:url({{images.0.url}})" data-album-id="{{id}}" class="cover">
-        </div>
-        {{/each}}
-
-    </script>
+<!-- <script id="results-template" type="text/x-handlebars-template">
+    {{#each albums.items}}
+    <div style="background-image:url({{images.0.url}})" data-album-id="{{id}}" class="cover"></div>
+    {{/each}}
+</script> -->
