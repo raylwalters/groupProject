@@ -9,13 +9,13 @@ app.config(function($routeProvider){
 		// controller:'moviesCtrl'
 	})
 	.when('/movies',{
-		templateUrl:'partials/movies.html',
+		templateUrl:'/partials/movies.html',
 		controller:'moviesCtrl'
 	})
 
 	.when('/books', {
 		templateUrl:'/partials/books.html',
-		controller:'moviesCtrl'
+		controller:'booksCtrl'
 	})
 	.when('/music', {
 		controller: 'musicCtrl',

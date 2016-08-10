@@ -1,1 +1,5 @@
-<p>Test</p>
+<div ng-repeat="movie in movies">
+	<!-- <img ng-src="{{movie.backdrop_path}}" alt="Poster"> -->
+	<h3>{{movie.original_title}}</h3>
+	<p>{{movie.overview}}</p>
+</div>
