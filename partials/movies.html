@@ -1,4 +1,4 @@
-<!-- <p>Test</p> -->
+
 
 
 <div ng-repeat="movie in movies">
@@ -6,3 +6,18 @@
   <p>{{movie.overview}}</p>
   <!-- <img src="{{movie.poster_path}}"></img> -->
 </div>
+
+<form name="myForm">
+	<label for="repeatSelect"> Genre: </label>
+	<select ng-change="saveId(info)" name="repeatSelect" id="repeatSelect" ng-model="info.id">
+	    <option ng-repeat="option in info.availableOptions" value="{{option.id}}">{{option.name}}</option>
+	</select>
+</form>
+
+<div ng-repeat="movie in movies">
+	<img ng-src="{{image + movie.poster_path}}" alt="Poster">
+	<h3>{{movie.title}}</h3>
+	<p>{{movie.overview}}</p>
+</div>
+
+

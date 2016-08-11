@@ -5,8 +5,6 @@ app.config(function($routeProvider){
 	.when('/',{
 		templateUrl:'partials/home.html',
 		controller:'mainCtrl'
-		// templateUrl:'partials/movies.html',
-		// controller:'moviesCtrl'
 	})
 	.when('/movies',{
 		templateUrl:'/partials/movies.html',
@@ -18,8 +16,8 @@ app.config(function($routeProvider){
 		controller:'booksCtrl'
 	})
 	.when('/music', {
-		controller: 'musicCtrl',
-		templateUrl: '/partials/music.html'
+		templateUrl: '/partials/music.html',
+		controller: 'musicCtrl'
 
 	})
 	.otherwise({
