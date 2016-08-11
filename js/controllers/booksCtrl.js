@@ -2,34 +2,44 @@
 
 var app = angular.module('entertainApp');
 
+app.controller('booksCtrl', ['$scope', 'bookList', function($scope, bookList) {
+    $scope.saveId = function(info) {
+	    var bookId = info;
+	    console.log($scope.bookId);
+	    bookList.passId(bookId);
+	    console.log(bookId);
+	    getUrl();
+    };
+    function getUrl() {
+        bookList.sendData().then(function(response){
+            $scope.books = response;
+            //$scope.image = ' ' ;//stuff;
+        });
+}
+    $scope.info = {
+        model:null,
+        availableOptions: [
+        {id: 'Action', name: 'Action'},
+        {id:'Adventure', name: 'Adventure'},
+        {id:'Biography', name: 'Biography'},
+        {id:'Comedy', name: 'Comedy'},
+        {id:'Crime', name: 'Crime'},
+        {id:'Family', name: 'Family'},
+        {id:'Fantasy', name: 'Fantasy'},
+        {id:'Fiction', name: 'Fiction'},
+        {id:'History', name: 'History'},
+        {id:'Horror', name: 'Horror'},
+        {id:'Music', name: 'Music'},
+        {id:'Mystery', name: 'Mystery'},
+        {id:'Romance', name: 'Romance'},
+        {id:'Science Fiction', name: 'Science Fiction'},
+        {id:'Thriller', name: 'Thriller'},
+        {id:'War', name: 'War'},
+        {id:'Western', name: 'Western'}
+        
+        ]
+	};
 
-app.controller('booksCtrl', function($scope, $http) {
-	$http ({
-		method: 'GET',
-		url: 'https://www.googleapis.com/books/v1/volumes?q=search+terms:comedy&key='
-	}).then(function successCallback(response) {
-		var storyArray = [];
-		for(var i=0;i<5;i++){
-			storyArray.push(i);
-		}
-		$scope.storyArray = response.data.items;
 
-	});
-});
+}]);
 
-
-
-
-/*var app = angular.module('myModule');
-
-app.controller('myController', function($scope,$http) {
-	$http ({
-		method: 'GET',
-		url: 'https://www.googleapis.com/books/v1/volumes?q=search+terms:jane+austen&key=AIzaSyBYgMe4rhHaREeA8Z38sDKe-_iOJrIo--w'
-	}).then(function successCallback(response) {
-		console.log(response.data.items[0].volumeInfo.authors);
-		$scope.id=response.data.items[0].volumeInfo.authors;
-	}, function errorCallback(response) {
-		console.log('oops');
-	});
-});*/
