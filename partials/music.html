@@ -11,15 +11,15 @@
 
 <div ng-repeat="music in musicCall">
   <p>{{music.name}}</p>
+  <!-- <p>{{music.uri}}</p> -->
   <img ng-src="{{music.images[0].url}}"></img>
   <!-- <a href="{{music.href}}">Click here</a> -->
 
-  <iframe ng-src="https://embed.spotify.com/?uri=" + {{songz}}></iframe>
+  <!-- <iframe ng-src="https://embed.spotify.com/?uri=" + {{songz}}></iframe> -->
 <!-- <iframe ng-src="{{getIframeSrc(songz)}}"></iframe> -->
 </div>
 
-
-<!-- <iframe src="{{playSongs + songz}}" width="300" height="380" frameborder="0" allowtransparency="true"></iframe> -->
+<iframe src="{{player}}" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
 
 <!-- <iframe src="https://embed.spotify.com/?uri=spotify:user:spotify:playlist:3rgsDhGHZxZ9sB9DQWQfuf" width="300" height="380" frameborder="0" allowtransparency="true"></iframe> -->
 
