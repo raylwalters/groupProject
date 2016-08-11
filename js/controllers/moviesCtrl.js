@@ -10,23 +10,11 @@ app.controller('moviesCtrl',['$scope','movieList', function($scope,movieList){
 		console.log(movieId);
 		getUrl();
 	}
-	// movieList.data().then(function(response){
-	// 		console.log(response);
-	// 		$scope.movies = response.data.results;
-	// 		});
-function getUrl(){
+	function getUrl(){
 		movieList.sendData().then(function(response){
-			console.log(response);
 			$scope.movies = response;
-
-		$scope.movies.forEach(function(item,index){
-			$scope.imageId = response[index].poster_path;
-			$scope.image = "http://image.tmdb.org/t/p/w92/"+$scope.imageId;
-		// // 	// $scope.image = "http://image.tmdb.org/t/p/w92/";
-			
-		console.log($scope.imageId);
-		console.log($scope.image);
-		});
+			// Build image url and store in variable 
+			$scope.image = "http://image.tmdb.org/t/p/w92/";
 	});
 
 		
@@ -58,44 +46,6 @@ function getUrl(){
 		   };
 }]);
 
-
-
-// Testing image url
-		// $scope.imageId1 = response.data.results[0].poster_path;
-		// $scope.image1 = "http://image.tmdb.org/t/p/w92/"+$scope.imageId1;
-		// $scope.imageId2 = response.data.results[1].poster_path;
-		// $scope.image2 = "http://image.tmdb.org/t/p/w92/"+$scope.imageId2;
-
-// This is for the image url
-		// $scope.movies.forEach(function(item,index){
-		// 	$scope.imageId = response.data.results[index].poster_path;
-		// 	$scope.image = "http://image.tmdb.org/t/p/w92/"+$scope.imageId;
-		// 	// $scope.image = "http://image.tmdb.org/t/p/w92/";
-			
-			
-		// });
-	// }
-	
-		
-		
-		// console.log($scope.imageId);
-		// console.log($scope.image);
-		
-	// });
-// }]);
-
-// app.controller('selectCtrl',['$scope','movieList', function($scope,movieList){
-// 	$scope.saveId = function(info){
-// 		// movieList.id = $scope.info.model;
-// 		// movieList.id = $scope.info;
-// 		movieList.storeId(info);
-// 		// $scope.movieId = $scope.info;
-// 		// $location.path('/movies');
-// 		console.log(movieId);
-// 	}
-
-
-// }]);
 
 
 

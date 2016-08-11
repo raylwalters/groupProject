@@ -1,17 +1,12 @@
 <form name="myForm">
-    <label for="repeatSelect"> Repeat select: </label>
-    <select name="repeatSelect" id="repeatSelect" ng-model="info.id">
-      <option ng-repeat="option in info.availableOptions" value="{{option.id}}">{{option.name}}</option>
-    </select>
-    <!-- <input type="text" ng-model="info.id"/> -->
-    <button type="button" ng-click="saveId(info)">Submit</button>
-  </form>
+	<label for="repeatSelect"> Genre: </label>
+	<select ng-change="saveId(info)" name="repeatSelect" id="repeatSelect" ng-model="info.id">
+	    <option ng-repeat="option in info.availableOptions" value="{{option.id}}">{{option.name}}</option>
+	</select>
+</form>
 
 <div ng-repeat="movie in movies">
-	<!-- <img ng-src="{{movie.backdrop_path}}" alt="Poster"> -->
-	<!-- <img ng-src="{{image}}" alt="Poster"> -->
-	<img ng-src="{{image}}" alt="Poster">
-	<!-- <img ng-src="{{image2}}" alt="Poster">Can't get image to change unless I reference certain index in array -->
+	<img ng-src="{{image + movie.poster_path}}" alt="Poster">
 	<h3>{{movie.title}}</h3>
 	<p>{{movie.overview}}</p>
 </div>
