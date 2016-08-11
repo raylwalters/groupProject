@@ -1,3 +1,4 @@
+
 <div class="container">
     <h1>Search for an Artist</h1>
     <form id="search-form">
@@ -9,8 +10,18 @@
 
 
 <div ng-repeat="music in musicCall">
-  <iframe src="https://embed.spotify.com/?uri={{musicCall}}" width="300" height="380"></iframe>
+  <p>{{music.name}}</p>
+  <img ng-src="{{music.images[0].url}}"></img>
+  <!-- <a href="{{music.href}}">Click here</a> -->
+
+  <iframe ng-src="https://embed.spotify.com/?uri=" + {{songz}}></iframe>
+<!-- <iframe ng-src="{{getIframeSrc(songz)}}"></iframe> -->
 </div>
+
+
+<!-- <iframe src="{{playSongs + songz}}" width="300" height="380" frameborder="0" allowtransparency="true"></iframe> -->
+
+<!-- <iframe src="https://embed.spotify.com/?uri=spotify:user:spotify:playlist:3rgsDhGHZxZ9sB9DQWQfuf" width="300" height="380" frameborder="0" allowtransparency="true"></iframe> -->
 
 <script id="results-template" type="text/x-handlebars-template">
     {{#each albums.items}}

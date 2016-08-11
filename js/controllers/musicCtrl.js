@@ -10,7 +10,7 @@ var templateSource = document.getElementById('results-template').innerHTML,
     // resultsPlaceholder = document.getElementById('results'),
     playingCssClass = 'playing',
     audioObject = null;
-
+    // $scope.resultsPlaceholder = '';
 
 var fetchTracks = function (albumId, callback) {
     $.ajax({
@@ -30,7 +30,18 @@ var searchAlbums = function (query) {
             type: 'playlist'
         },
         success: function (response) {
-            $scope.musicCall = response.playlists.items.uri;
+            // resultsPlaceholder.innerHTML = template(response);
+            $scope.musicCall = response.playlists.items;
+            $scope.songz = response.playlists.items.uri;
+            //
+            // $scope.playSongs = "https://embed.spotify.com/?uri=";
+
+            // $scope.getIframeSrc = function (songz) {
+            //     return 'https://embed.spotify.com/?uri=' + songz;
+            //   };
+
+// $scope.player = '<iframe src="https://embed.spotify.com/?uri=" + $scope.musicCall +  'width="300" height="380"'></iframe>'
+
             console.log(response);
             console.log($scope.musicCall);
         }
