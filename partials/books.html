@@ -1,13 +1,14 @@
+<!doctype html>
 <form name="myForm">
-    <label for="repeatSelect"> Genre: </label>
-    <select ng-change="saveId(info)" name="repeatSelect" id="repeatSelect" ng-model="info.id">
-        <option ng-repeat="option in info.availableOptions" value="{{option.id}}">{{option.name}}</option>
-    </select>
+    <label for="repeatSelect"> Genre: </label>
+    <select ng-change="saveId(info)" name="repeatSelect" id="repeatSelect" ng-model="info.id">
+        <option ng-repeat="option in info.availableOptions" value="{{option.id}}">{{option.name}}</option>
+    </select>
 </form>
 
 <div ng-repeat="book in books">
 
-    <a target=_blank ng-href="{{book.accessInfo.webReaderLink}}"><img ng-src="{{book.volumeInfo.imageLinks.smallThumbnail}}" alt="Sup"></a>
-    <h3>{{book.volumeInfo.title}}</h3>
-    <p>{{book.volumeInfo.description}}</p>
+    <a target=_blank ng-href="{{book.accessInfo.webReaderLink}}"><img ng-src="{{book.volumeInfo.imageLinks.smallThumbnail}}" alt="Sup"></a>
+    <h3>{{book.volumeInfo.title}}</h3>
+    <p>{{book.volumeInfo.description}}</p>
 </div>
