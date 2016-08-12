@@ -6,7 +6,7 @@ app.factory('bookList', ['$http', function($http){
     var randomId = {};
     function passId(bookId){
         randomId = bookId;
-        console.log(randomId);
+        console.log(randomId);lkj
     }
     function sendData(){
         return $http({
