@@ -1,6 +1,6 @@
 
 <div class="container">
-    <h1>Search for an Artist</h1>
+    <h1>Search Playlist Keyword</h1>
     <form id="search-form">
         <input type="text" id="query" value="" class="form-control" />
         <input type="submit" id="search" class="btn btn-primary" value="Search" />
@@ -12,14 +12,14 @@
 <div ng-repeat="music in musicCall">
   <p>{{music.name}}</p>
   <!-- <p>{{music.uri}}</p> -->
-  <img ng-src="{{music.images[0].url}}"></img>
-  <!-- <a href="{{music.href}}">Click here</a> -->
+  <!-- <img ng-src="{{music.images[0].url}}"></img> -->
+  <a target=_blank ng-href="{{music.external_urls.spotify}}"><img ng-src="{{music.images[0].url}}"></img></a>
 
   <!-- <iframe ng-src="https://embed.spotify.com/?uri=" + {{songz}}></iframe> -->
 <!-- <iframe ng-src="{{getIframeSrc(songz)}}"></iframe> -->
 </div>
 
-<iframe src="{{player}}" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+<!-- <iframe src="{{player}}" width="300" height="380" frameborder="0" allowtransparency="true"></iframe> -->
 
 <!-- <iframe src="https://embed.spotify.com/?uri=spotify:user:spotify:playlist:3rgsDhGHZxZ9sB9DQWQfuf" width="300" height="380" frameborder="0" allowtransparency="true"></iframe> -->
 

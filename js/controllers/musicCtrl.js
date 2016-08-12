@@ -32,9 +32,10 @@ var searchAlbums = function (query) {
         success: function (response) {
             // resultsPlaceholder.innerHTML = template(response);
             $scope.musicCall = response.playlists.items;
-            $scope.songz = response.playlists.items.uri;
+            // $scope.songz = response.playlists.items.external_url;
+
             //
-            $scope.playSongs = "https://embed.spotify.com/?uri=";
+            // $scope.playSongs = "https://embed.spotify.com/?uri=";
 
             // $scope.getIframeSrc = function (songz) {
             //     return 'https://embed.spotify.com/?uri=' + songz;
