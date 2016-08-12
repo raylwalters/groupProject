@@ -5,8 +5,8 @@
 	</select>
 </form>
 
-<div ng-repeat="movie in movies">
-	<img ng-src="{{image + movie.poster_path}}" alt="Poster">
+<div ng-repeat="movie in movies | orderBy:'title'">
+	<a target=_blank ng-href="https://www.google.com/#q= + {{movie.title}}""><img ng-src="{{image + movie.poster_path}}" alt="Poster"></a>
 	<h3>{{movie.title}}</h3>
 	<p>{{movie.overview}}</p>
 </div>
