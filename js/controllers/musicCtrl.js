@@ -1,9 +1,24 @@
 var app = angular.module('entertainApp');
 
-app.controller('musicCtrl', function($scope){
+app.controller('musicCtrl', function($scope, musicService){
+  // musicService.data().then(function(response){
+  //   $scope.musicCall = response.playlists.items;
+  // })
 
 
-
+  $scope.searchAlbums = function(userInfo) {
+    // var query = userInfo;
+    musicService.passId(userInfo);
+    singing = userInfo;
+    console.log(singing);
+    getUrl();
+  };
+function getUrl(){
+  musicService.sendData().then(function(response){
+    $scope.musicCall = response;
+  });
+}
+});
 // find template and compile it
 // var templateSource = document.getElementById('results-template').innerHTML,
 //     template = Handlebars.compile(templateSource),
@@ -24,24 +39,24 @@ app.controller('musicCtrl', function($scope){
 
 
 
-var searchAlbums = function (query) {
-
-
-    $.ajax({
-        url: 'https://api.spotify.com/v1/search',
-        data: {
-            q: query,
-            type: 'playlist'
-        },
-        success: function (response) {
-            // resultsPlaceholder.innerHTML = template(response);
-            $scope.musicCall = response.playlists.items;
-            console.log(response);
-            console.log($scope.musicCall);
-        }
-    });
-
-};
+// var searchAlbums = function (query) {
+//
+//
+//     $.ajax({
+//         url: 'https://api.spotify.com/v1/search',
+//         data: {
+//             q: query,
+//             type: 'playlist'
+//         },
+//         success: function (response) {
+//             // resultsPlaceholder.innerHTML = template(response);
+//             $scope.musicCall = response.playlists.items;
+//             console.log(response);
+//             console.log($scope.musicCall);
+//         }
+//     });
+//
+// };
 
 // results.addEventListener('click', function(e) {
 //     var target = e.target;
@@ -67,10 +82,10 @@ var searchAlbums = function (query) {
 //     }
 // });
 
-document.getElementById('search-form').addEventListener('submit', function (e) {
-    e.preventDefault();
-    searchAlbums(document.getElementById('query').value);
-}, false);
-
-
-});
+// document.getElementById('search-form').addEventListener('submit', function (e) {
+//     e.preventDefault();
+//     searchAlbums(document.getElementById('query').value);
+// }, false);
+//
+//
+// });
