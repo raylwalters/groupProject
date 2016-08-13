@@ -16,6 +16,7 @@ app.controller('musicCtrl', function($scope, musicService){
 function getUrl(){
   musicService.sendData().then(function(response){
     $scope.musicCall = response;
+    console.log(response);
   });
 }
 });
