@@ -1,1 +1,30 @@
-<p>home</p>
+<div class="row">
+	
+	<div class="col-sm-4">
+		<a href="#/movies"<h2>Movies</h2></a>
+		<div ng-repeat='movie in movieShort | limitTo: 3'>
+			<a target=_blank ng-href="https://www.google.com/#q= + {{movie.title}}"><img ng-src="{{image + movie.poster_path}}" alt="Poster"></a>
+			<h3 class='home-info'>{{movie.title}}</h3>
+			<!-- <p class='home-info'>{{movie.overview}}</p> -->
+		</div>	
+	</div>
+
+	<div class="col-sm-4">
+		<a href="#/music"<h2>Music</h2></a>
+		<div ng-repeat="music in musicShort | limitTo: 5">
+		   <!-- <p>{{music.name}}</p>  Showing multiple names, not an image for each index-->
+		  <a target=_blank ng-href="{{music.external_urls.spotify}}"><img ng-src="{{music.images[2].url}}"></img></a>
+		</div>	
+	</div>
+
+	<div class="col-sm-4">
+		<a href="#/books"<h2>Books</h2></a>
+		<div ng-repeat='book in bookShort | limitTo: 3'>
+			<a target=_blank ng-href="{{book.accessInfo.webReaderLink}}"><img ng-src="{{book.volumeInfo.imageLinks.smallThumbnail}}" alt="Poster"></a>
+			<h3 class='home-info'>{{book.volumeInfo.title}}</h3>
+			<!-- <p class='home-info'>{{book.volumeInfo.description}}</p> -->
+		</div>
+	</div>
+
+
+</div>
