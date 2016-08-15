@@ -1,30 +1,147 @@
+<!-- CAROUSEL WITH MOVIE POSTERS/BOOK COVERS -->
+		<!-- Slick - retry code, why isn't it working? Something isn't linked up properly -->
+<!-- END CAROUSEL -->
+
+
+<!-- header on landing page -->
 <div class="row">
-	
+	<div class="col-md-12">
+		<h1 id="head">hermix</h1>
+	</div>
+</div>
+<!-- end of header on landing page -->
+
+
+<!-- beginning main informational div on landing page -->
+<div class="row">
+	<div class="col-md-12" id="desc">
+		<h2>staying in just became more efficient<h2>
+			<br />
+			<p>A mood ring for entertainment - select from list of movies/music/books currated to fit a certain mood, or search for your own unique taste.</p>
+	</div>
+</div>
+<!-- end main informational div on landing page -->
+
+<!-- BEGIN SPOOKY SCARY -->
+<div class="row" id="scary">
+	<div class="col-md-12">
+		<h3 class="title">Spooky Scary</h3>
+	</div>
+	<div class="col-md-4">
+		<h4>Movies to Watch</h4>
+		<div ng-repeat='movie in movieShort | limitTo: 3'>
+			<h3 class='home-info'>{{movie.title}}</h3>
+			<a target=_blank ng-href="https://www.google.com/#q= + {{movie.title}}"><img class="one" ng-src="{{image + movie.poster_path}}" alt="Poster"></a>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<h4>Playlist to Check Out</h4>
+		<div ng-repeat="music in musicShort | limitTo: 2">
+		  <a target=_blank ng-href="{{music.external_urls.spotify}}"><img class="one" ng-src="{{music.images[2].url}}"></img></a>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<h4>Book to Read</h4>
+		<div ng-repeat='book in bookShort | limitTo: 3'>
+			<h3 class='home-info'>{{book.volumeInfo.title}}</h3>
+			<a target=_blank ng-href="{{book.accessInfo.webReaderLink}}"><img class="one" ng-src="{{book.volumeInfo.imageLinks.smallThumbnail}}" alt="Poster"></a>
+		</div>
+	</div>
+</div>
+<!-- END SPOOKY SCARY -->
+
+<!-- BEGIN SUPERHERO ACTION -->
+<div class="row" id="superhero">
+	<div class="col-md-12">
+		<h3 class="title">Superhero Action</h3>
+	</div>
+	<div class="col-md-4">
+		<h4>Movies to Watch</h4>
+		<div ng-repeat='movie in movieShort | limitTo: 3'>
+			<h3 class='home-info'>{{movie.title}}</h3>
+			<a target=_blank ng-href="https://www.google.com/#q= + {{movie.title}}"><img class="one" ng-src="{{image + movie.poster_path}}" alt="Poster"></a>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<h4>Playlist to Check Out</h4>
+		<div ng-repeat="music in musicShort | limitTo: 5">
+		  <a target=_blank ng-href="{{music.external_urls.spotify}}"><img class="one" ng-src="{{music.images[2].url}}"></img></a>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<h4>Book to Read</h4>
+		<div ng-repeat='book in bookShort | limitTo: 3'>
+			<h3 class='home-info'>{{book.volumeInfo.title}}</h3>
+			<a target=_blank ng-href="{{book.accessInfo.webReaderLink}}"><img class="one" ng-src="{{book.volumeInfo.imageLinks.smallThumbnail}}" alt="Poster"></a>
+		</div>
+	</div>
+</div>
+<!-- END SUPERHERO ACTION -->
+
+<!-- BEGIN DETECTIVE -->
+<div class="row" id="detective">
+	<div class="col-md-12">
+		<h3 class="title">Detective Thrillers</h3>
+	</div>
+	<div class="col-md-4">
+		<h4>Movies to Watch</h4>
+		<div ng-repeat='movie in movieShort | limitTo: 3'>
+			<h3 class='home-info'>{{movie.title}}</h3>
+			<a target=_blank ng-href="https://www.google.com/#q= + {{movie.title}}"><img class="one" ng-src="{{image + movie.poster_path}}" alt="Poster"></a>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<h4>Playlist to Check Out</h4>
+		<div ng-repeat="music in musicShort | limitTo: 5">
+		  <a target=_blank ng-href="{{music.external_urls.spotify}}"><img class="one" ng-src="{{music.images[2].url}}"></img></a>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<h4>Book to Read</h4>
+		<div ng-repeat='book in bookShort | limitTo: 3'>
+			<h3 class='home-info'>{{book.volumeInfo.title}}</h3>
+			<a target=_blank ng-href="{{book.accessInfo.webReaderLink}}"><img class="one" ng-src="{{book.volumeInfo.imageLinks.smallThumbnail}}" alt="Poster"></a>
+		</div>
+	</div>
+</div>
+<!-- END DETECTIVE -->
+<!-- beginning of movie/music/book colums -->
+<!-- <div class="row">
 	<div class="col-sm-4">
 		<a href="#/movies"<h2>Movies</h2></a>
 		<div ng-repeat='movie in movieShort | limitTo: 3'>
-			<a target=_blank ng-href="https://www.google.com/#q= + {{movie.title}}"><img ng-src="{{image + movie.poster_path}}" alt="Poster"></a>
 			<h3 class='home-info'>{{movie.title}}</h3>
+			<a target=_blank ng-href="https://www.google.com/#q= + {{movie.title}}"><img ng-src="{{image + movie.poster_path}}" alt="Poster"></a> -->
 			<!-- <p class='home-info'>{{movie.overview}}</p> -->
-		</div>	
+		<!-- </div>
 	</div>
 
 	<div class="col-sm-4">
 		<a href="#/music"<h2>Music</h2></a>
-		<div ng-repeat="music in musicShort | limitTo: 5">
+		<div ng-repeat="music in musicShort | limitTo: 5"> -->
 		   <!-- <p>{{music.name}}</p>  Showing multiple names, not an image for each index-->
-		  <a target=_blank ng-href="{{music.external_urls.spotify}}"><img ng-src="{{music.images[2].url}}"></img></a>
-		</div>	
+		  <!-- <a target=_blank ng-href="{{music.external_urls.spotify}}"><img ng-src="{{music.images[2].url}}"></img></a>
+		</div>
 	</div>
 
 	<div class="col-sm-4">
 		<a href="#/books"<h2>Books</h2></a>
 		<div ng-repeat='book in bookShort | limitTo: 3'>
-			<a target=_blank ng-href="{{book.accessInfo.webReaderLink}}"><img ng-src="{{book.volumeInfo.imageLinks.smallThumbnail}}" alt="Poster"></a>
 			<h3 class='home-info'>{{book.volumeInfo.title}}</h3>
+			<a target=_blank ng-href="{{book.accessInfo.webReaderLink}}"><img ng-src="{{book.volumeInfo.imageLinks.smallThumbnail}}" alt="Poster"></a> -->
+
 			<!-- <p class='home-info'>{{book.volumeInfo.description}}</p> -->
-		</div>
+		<!-- </div>
+	</div> -->
+<!-- end of movies/music/book columns -->
+
+<!-- FOOTER -->
+<div class="row">
+  <div class="col-md-12">
+      <p class="text-muted">&copy; 2016 hermix <span class="glyphicon glyphicon-film" aria-hidden="true"></span>
+			</p>
 	</div>
+</div>
 
 
 </div>
