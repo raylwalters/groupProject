@@ -44,12 +44,18 @@ p {
 #bookList {
   text-align: center; }
 
+.book-title {
+  height: 70px; }
+
+.two {
+  height: 138px;
+  width: 92px; }
+
 .bookScroll {
-  float:right;
+  float: right;
   width: 70%;
   height: 120px;
   overflow: scroll; }
-
 
 /*Movie CSS*/
 .box {
@@ -66,4 +72,3 @@ p {
 
 #movie-logo {
   width: 7%; }
-

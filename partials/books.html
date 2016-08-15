@@ -20,9 +20,9 @@
 
 <div class="row" id="bookList">
   <div class="col-md-4" ng-repeat="book in books">
-    <h3>{{book.volumeInfo.title}}</h3>
+    <h3 class="book-title">{{book.volumeInfo.title}}</h3>
     <h4>{{book.volumeInfo.authors[0]}}</h4>
-        <a target=_blank ng-href="{{book.accessInfo.webReaderLink}}"><img class="one" ng-src="{{book.volumeInfo.imageLinks.smallThumbnail}}" alt="Sup"></a>
+        <a target=_blank ng-href="{{book.accessInfo.webReaderLink}}"><img class="two" ng-src="{{book.volumeInfo.imageLinks.smallThumbnail}}" alt="Sup"></a>
         <!-- <h3>{{book.volumeInfo.title}}</h3>
         <h4>{{book.volumeInfo.authors[0]}}</h4> -->
         <p class="bookScroll">{{book.volumeInfo.description}}</p>
