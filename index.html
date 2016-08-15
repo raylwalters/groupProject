@@ -11,19 +11,29 @@
 </head>
 
 <body ng-app='entertainApp'>
-	<nav ng-controller="navCtrl" class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-	    <ul class="nav nav-pills">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="row">
+    <div class="col-sm-8">
+	<nav ng-controller="navCtrl">
+  <!-- class="navbar navbar-default navbar-fixed-top"> -->
+    <!-- <div class="container"> -->
+	    <ul class="nav">
   			<li ng-class="{active: isActive('/')}"><a href="#/home">Home</a></li>
   	    <li ng-class="{active: isActive('/movies')}"><a href="#/movies">Movies</a></li>
   	    <li ng-class="{active: isActive('/music')}"><a href="#/music">Music</a></li>
   			<li ng-class="{active: isActive('/books')}"><a href="#/books">Books</a></li>
-        <!-- Hermix logo with link to home page on fixed navigation -->
+        </ul>
+      </nav>
+      <!-- </div> -->
+      </div>
+        <div class="col-sm-4">
         <a class="navbar-brand" href="#">
-            <img alt="Hermix logo" src="...">
+            <img alt="WORKING TITLE logo" src="...">
         </a>
-        <!--need to get logo in for img -->
-	    </ul>
+        </div>
+	    <!-- </ul> -->
+    <!-- </div> -->
     </div>
 	</nav>
 
@@ -41,7 +51,7 @@
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/handlebarsjs/4.0.5/handlebars.min.js"></script>
 <!-- script for lettering.js -->
-  <script src="jquery.lettering-0.6.1.min.js"></script>
+  <!-- <script src="jquery.lettering-0.6.1.min.js"></script> -->
 
   <!-- <script src="slick-master/slick/slick.js" type="text/javascript"></script>
   <script src="script.js"></script> -->

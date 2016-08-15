@@ -5,9 +5,6 @@ body {
   display: inline-block;
   font-size: 18px; }
 
-.navbar-brand {
-  text-align: right; }
-
 #head {
   font-family: 'Volkhov', serif;
   text-align: center;
@@ -28,14 +25,12 @@ p {
   font-size: 18px; }
 
 #scary {
-  text-align: center;
-  background-color: #FFFDF7; }
+  text-align: center; }
 
-#superhero {
-  text-align: center;
-  background-color: #FFFDF7; }
+#bookImg {
+  text-align: center; }
 
-#detective {
+#playlistImg {
   text-align: center; }
 
 .one {
