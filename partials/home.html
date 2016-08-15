@@ -3,7 +3,7 @@
 	<div class="col-sm-4">
 		<a href="#/movies"<h2>Movies</h2></a>
 		<div ng-repeat='movie in movieShort | limitTo: 3'>
-			<a target=_blank ng-href="https://www.google.com/#q= + {{movie.title}}"><img ng-src="{{image + movie.poster_path}}" alt="Poster"></a>
+			<a target=_blank ng-href="https://www.google.com/#q= + {{movie.title}} + trailer"><img ng-src="{{image + movie.poster_path}}" alt="Poster"></a>
 			<h3 class='home-info'>{{movie.title}}</h3>
 			<!-- <p class='home-info'>{{movie.overview}}</p> -->
 		</div>	
