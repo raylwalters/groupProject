@@ -1,22 +1,28 @@
-
-<form name="myForm">
-	<label for="repeatSelect"> Genre: </label>
-	<select ng-change="saveId(info)" name="repeatSelect" id="repeatSelect" ng-model="info.id">
-	    <option ng-repeat="option in info.availableOptions" value="{{option.id}}">{{option.name}}</option>
-	</select>
-</form>
-<button ng-click="saveId(info)">Reload</button>
+<div class="row">
+	<div class="col-md-2">
+		<form name="myForm">
+			<label for="repeatSelect"> Genre: </label>
+			<select ng-change="saveId(info)" name="repeatSelect" id="repeatSelect" ng-model="info.id">
+			    <option ng-repeat="option in info.availableOptions" value="{{option.id}}">{{option.name}}</option>
+			</select>
+		</form>
+	</div>
+	<div class="col-md-2">
+		<button ng-click="saveId(info)">Reload</button>
+	</div>
+</div>
 <!-- <ul id="pageNum">
 	<li id="one">1</li>
 	<li id="two">2</li>
 </ul> -->
-
-<div ng-repeat="movie in movies | orderBy:'title'">
-	<a target=_blank ng-href="https://www.google.com/#q= + {{movie.title}} + trailer"><img ng-src="{{image + movie.poster_path}}" alt="Poster"></a>
-	<h3>{{movie.title}}</h3>
-	<p>{{movie.overview}}</p>
+<div class="row">
+	<div class="col-md-4" ng-repeat="movie in movies | orderBy:'title'">
+		<h3 class="title-box">{{movie.title}}</h3>
+		<a target=_blank ng-href="https://www.google.com/#q= + {{movie.title}} + trailer"><img ng-src="{{image + movie.poster_path}}" alt="Poster"></a>
+		<p class="box">{{movie.overview}}</p>
+	</div>
 </div>
 
-<img src="images/PoweredByTMDB.png" alt="TMDB">
+<img id="movie-logo" src="images/PoweredByTMDB.png" alt="TMDB">
 
 
