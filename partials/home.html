@@ -5,20 +5,19 @@
 
 
 <!-- header on landing page -->
+<div class="container-fluid" id="head">
 <div class="row">
 	<div class="col-md-12">
-		<h1 id="head">WORKING TITLE</h1>
+		<h1>WORKING TITLE</h1>
 	</div>
 </div>
-<!-- end of header on landing page -->
-
-
 <!-- beginning main informational div on landing page -->
 <div class="row">
-	<div class="col-md-12" id="desc">
+	<div class="col-md-12">
 		<h2>staying in just became more efficient<h2>
 			<p>Description of app and uses etc. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	</div>
+</div>
 </div>
 <!-- end main informational div on landing page -->
 
@@ -65,7 +64,7 @@
 
 <div class="row">
 <div class="col-md-4" ng-repeat='book in bookShort | limitTo: 3' id="bookImg">
-			<h3 class='home-info'>{{book.volumeInfo.title}}</h3>
+			<!-- <h3 class='home-info'>{{book.volumeInfo.title}}</h3> -->
 			<a target=_blank ng-href="{{book.accessInfo.webReaderLink}}"><img class="one" ng-src="{{book.volumeInfo.imageLinks.smallThumbnail}}" alt="Poster"></a>
 		</div>
 	</div>
