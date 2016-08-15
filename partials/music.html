@@ -1,7 +1,7 @@
 
 
 <div class="container">
-    <h1>Search Playlist Keyword</h1>
+    <h1>Search Artist Keyword</h1>
     <form id="search-form">
         <input type="text" ng-model="userInfo.id" id="query" value="" class="form-control" />
         <button type="submit" ng-click="searchAlbums(userInfo)" id="search" class="btn btn-primary" value="Search">SEARCH</button>
@@ -9,10 +9,14 @@
     <div id="results"></div>
 </div>
 
-<div ng-repeat="music in musicCall">
-  <h4>Playlist Name: </h4> <p>{{music.name}}</p>
-  <a target=_blank ng-href="{{music.external_urls.spotify}}"><img ng-src="{{music.images[0].url}}"></img></a>
+<div class="row">
+  <div class="col-md-12" ng-repeat="music in musicCall">
+      <h4>Playlist Name: </h4> <p>{{music.name}}</p>
+      <a target=_blank ng-href="{{music.external_urls.spotify}}"><img ng-src="{{music.images[0].url}}"></img></a>
+    </div>
+  </div>
 </div>
+
 
 
 <!-- <script id="results-template" type="text/x-handlebars-template">
