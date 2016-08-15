@@ -1,16 +1,25 @@
-<div class="row">
-	<div class="col-md-2">
-		<form name="myForm">
-			<label for="repeatSelect"> Genre: </label>
-			<select ng-change="saveId(info)" name="repeatSelect" id="repeatSelect" ng-model="info.id">
-			    <option ng-repeat="option in info.availableOptions" value="{{option.id}}">{{option.name}}</option>
-			</select>
-		</form>
-	</div>
-	<div class="col-md-2">
-		<button ng-click="saveId(info)">Reload</button>
-	</div>
+<div class="container-fluid" id="head">
+  <div class="row">
+	   <div class="col-md-12">
+		     <h1>Movies</h1>
+	   </div>
+  </div>
 </div>
+
+	<div class="row">
+		<div class="col-md-2">
+			<form name="myForm">
+				<label for="repeatSelect"> Genre: </label>
+				<select ng-change="saveId(info)" name="repeatSelect" id="repeatSelect" ng-model="info.id">
+				    <option ng-repeat="option in info.availableOptions" value="{{option.id}}">{{option.name}}</option>
+				</select>
+			</form>
+		</div>
+		<div class="col-md-2">
+			<button ng-click="saveId(info)">Reload</button>
+		</div>
+	</div>
+
 <!-- <ul id="pageNum">
 	<li id="one">1</li>
 	<li id="two">2</li>

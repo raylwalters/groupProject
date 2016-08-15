@@ -29,7 +29,8 @@ app.factory('movieList',['$http', function($http){
 		var target = Math.floor(Math.random() * (21-1)+1);
 		console.log(target);
 			return $http({
-				url: "http://api.themoviedb.org/3/discover/movie?api_key=xxxx&release_date.lte=2016-05-01&with_genres="+ randomId.id + "&page=" + target,
+
+				url: "http://api.themoviedb.org/3/discover/movie?api_key=xxxxxxxxx&release_date.lte=2016-05-01&with_genres="+ randomId.id + "&page=" + target,
 				method: "GET"
 			}).then(function(response){
 				console.log(response.data.results);
