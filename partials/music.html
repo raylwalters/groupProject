@@ -17,7 +17,7 @@
 
 <div class="row">
   <div class="col-md-4" ng-repeat="music in musicCall">
-      <p>{{music.name}}</p>
+      <p class="title-box">{{music.name}}</p>
       <a target=_blank ng-href="{{music.external_urls.spotify}}"><img class="musicPic" ng-src="{{music.images[0].url}}"></img></a>
     </div>
   </div>
