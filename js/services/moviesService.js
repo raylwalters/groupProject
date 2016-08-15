@@ -13,7 +13,7 @@ app.factory('movieList',['$http', function($http){
 // Attempting to add page numbers to switch to
 	// function getEventTarget(e) {
 	//     e = e || window.event;
-	//     return e.target || e.srcElement; 
+	//     return e.target || e.srcElement;
 	// }
 
 	// var ul = document.getElementById('pageNum');
@@ -22,7 +22,7 @@ app.factory('movieList',['$http', function($http){
 	//     target = target.innerText;
 	//     console.log(target);
 	//     return target;
-	    
+
 	// };
 
 	function sendData(){
@@ -30,7 +30,7 @@ app.factory('movieList',['$http', function($http){
 		console.log(target);
 			return $http({
 
-				url: "http://api.themoviedb.org/3/discover/movie?api_key=xxxxxxxxx&release_date.lte=2016-05-01&with_genres="+ randomId.id + "&page=" + target,
+				url: "http://api.themoviedb.org/3/discover/movie?api_key=f26d8020ab7996e8ae35fa0d465c6732&release_date.lte=2016-05-01&with_genres="+ randomId.id + "&page=" + target,
 
 				method: "GET"
 			}).then(function(response){
@@ -43,11 +43,10 @@ app.factory('movieList',['$http', function($http){
 			passId: passId,
 			sendData: sendData
 		};
-		
 
-		
-	
-	
+
+
+
+
 
 }]);
-
