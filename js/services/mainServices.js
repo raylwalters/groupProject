@@ -11,7 +11,7 @@ app.factory('mainMovies',['$http', function($http){
 app.factory('mainBooks',['$http', function($http){
 	return{
 		data: function(){
-			return $http.get("https://www.googleapis.com/books/v1/volumes?q=subject:Adventure&key=AIzaSyCriMrONlAaY3CVEJzBBB-oUZLcOCDAVOA");
+			return $http.get("https://www.googleapis.com/books/v1/volumes?q=subject:Adventure&key=xxxxxxxxxxxxx");
 			}
 		};
 }]);
