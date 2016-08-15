@@ -10,10 +10,26 @@ app.factory('movieList',['$http', function($http){
 		randomId = movieId;
 		console.log(randomId);
 	}
+// Attempting to add page numbers to switch to
+	// function getEventTarget(e) {
+	//     e = e || window.event;
+	//     return e.target || e.srcElement; 
+	// }
+
+	// var ul = document.getElementById('pageNum');
+	// ul.onclick = function(event) {
+	//     var target = getEventTarget(event);
+	//     target = target.innerText;
+	//     console.log(target);
+	//     return target;
+	    
+	// };
 
 	function sendData(){
+		var target = Math.floor(Math.random() * (21-1)+1);
+		console.log(target);
 			return $http({
-				url: "http://api.themoviedb.org/3/discover/movie?api_key=f26d8020ab7996e8ae35fa0d465c6732&release_date.lte=2016-05-01&with_genres="+ randomId.id,
+				url: "http://api.themoviedb.org/3/discover/movie?api_key=f26d8020ab7996e8ae35fa0d465c6732&release_date.lte=2016-05-01&with_genres="+ randomId.id + "&page=" + target,
 				method: "GET"
 			}).then(function(response){
 				console.log(response.data.results);
