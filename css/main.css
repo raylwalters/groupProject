@@ -22,6 +22,11 @@ body {
 p {
   font-size: 18px; }
 
+.headLink {
+  text-align: center;
+  background-color: #ccc;
+ }
+
 #scary {
   text-align: center; }
 
@@ -40,6 +45,11 @@ p {
 
 #musicList {
   text-align: center; }
+
+  .musicPic {
+    width: 92px;
+    height: 92px;
+  }
 
 #bookList {
   text-align: center; }
