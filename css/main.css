@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   padding-top: 70px; }
 
@@ -5,14 +6,41 @@ body {
   display: inline-block;
   font-size: 18px; }
 
+/*trying to make the hermix logo go to the right corner of nav bar
+.navbar-brand {
+  text-align: right;
+ }*/
 #head {
-  font-family: 'Volkhov', serif;
   text-align: center;
   font-size: 36px;
-  background-color: #92E8B8;
-  padding: 3em; }
-  #head .char1 {
-    font-size: 18px; }
+  padding: 3em;
+  font-size: 18px;
+  z-index: 9999;
+  color: #F7FFF6;
+  left: 32%; }
+
+#textAndImage {
+  text-align: center; }
+
+#text {
+  position: absolute;
+  z-index: 99999;
+  top: 30%;
+  left: 22%;
+  color: #F7FFF6;
+  font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace; }
+
+#name {
+  font-size: 80px;
+  top: 15%; }
+
+video {
+  z-index: -1247;
+  max-width: 90%;
+  max-height: 15%;
+  background-size: cover;
+  overflow: hidden;
+  align-content: center; }
 
 #desc {
   text-align: center;
@@ -39,3 +67,5 @@ p {
 
 .text-muted {
   text-align: right; }
+
+/*CAROUSEL BEGINS*/

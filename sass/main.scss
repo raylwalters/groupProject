@@ -1,10 +1,82 @@
-<<<<<<< HEAD
-#welcome {
-  background-color: #bcb699;
-}
-=======
-.nav li{
-	display: inline-block;
+body { 
+padding-top: 70px; 
 }
 
->>>>>>> 9ff352b2f7ff32f2e1b3d4a2816f02ad52566a45
+.nav li {
+display: inline-block;
+font-size: 18px;
+}
+
+/*trying to make the hermix logo go to the right corner of nav bar
+.navbar-brand {
+  text-align: right;
+ }*/
+
+#head {
+text-align:center;
+font-size:36px;
+padding:3em;
+font-size:18px;
+z-index:9999;
+color:#F7FFF6;
+left:32%;
+}
+#textAndImage {
+	text-align:center;
+}
+#text {
+	position:absolute; 
+	z-index:99999;
+	top:30%;
+	left:22%;
+	color:#F7FFF6;
+	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+}
+#name {
+	font-size:80px;
+	top:15%;
+}
+video {
+z-index:-1247;
+max-width:90%;
+max-height:15%;
+background-size:cover;
+overflow:hidden;
+align-content:center;
+}
+
+#desc {
+text-align: center;
+font-size: 24px;
+
+}
+
+.title {
+text-align: left;
+}
+
+p {
+font-size: 18px;
+}
+
+#scary {
+text-align: center;
+}
+
+#bookImg {
+text-align: center;
+}
+
+#playlistImg {
+text-align: center;
+}
+
+.one {
+height: 15em;
+width: 10em;
+}
+
+.text-muted {
+text-align: right;
+}
+/*CAROUSEL BEGINS*/
