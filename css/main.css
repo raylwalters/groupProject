@@ -24,7 +24,22 @@ body {
 
 p {
   font-size: 18px; }
-
+.navbar{
+  background-color: #D7D5CF;
+}
+a{
+  color:#6D1F1A;
+}
+form{
+    color:#D7D5CF;
+    padding:5%;
+}
+button{
+  margin:3%;
+}
+select, button{
+  color:black;
+}
 .headLink {
   /*padding: 1em;*/
   background-color: #ccc;
