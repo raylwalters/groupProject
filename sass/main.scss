@@ -1,80 +1,50 @@
 body {
   padding-top: 70px;
-
   background-color: #2A2B2E;
-  color: #F7FFF6; }
-
+  color:#F7FFF6;
+ }
 
 .nav li {
   display: inline-block;
   font-size: 18px; }
 
-
 #head {
+  font-family: 'Volkhov', serif;
   text-align: center;
   font-size: 36px;
-  padding: 3em;
-  z-index: 9999;
-  color: #F7FFF6;
-  left: 32%; }
-
-#textAndImage {
-  text-align: center; }
-
-#text {
-  position: absolute;
-  z-index: 99999;
-  top: 30%;
-  left: 22%;
-  color: #F7FFF6;
-  font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace; }
-
-#name {
-  font-size: 80px;
-  top: 15%; }
-
-video {
-  z-index: -1247;
-  max-width: 90%;
-  max-height: 15%;
-  background-size: cover;
-  overflow: hidden;
-  align-content: center; }
-
+  background-color: #6D1F1A;
+  padding: 3em; }
 
 #desc {
   text-align: center;
   font-size: 24px; }
 
 .title {
-  text-align: left;
-  margin-left: 1.5em;
- }
+  text-align: left; }
 
 p {
   font-size: 18px; }
-
-.navbar {
-  background-color: #7e7e7e; }
-
-a {
-  color: #6D1F1A; }
-
-form {
-  color: #D7D5CF;
-  padding: 5%; }
-
-button {
-  margin: 3%; }
-
-select, button {
-  color: black; }
-
+.navbar{
+  background-color: #7e7e7e;
+}
+a{
+  color:#6D1F1A;
+}
+form{
+    color:#D7D5CF;
+    padding:5%;
+}
+button{
+  margin:3%;
+}
+select, button{
+  color:black;
+}
 .headLink {
   padding: 1%;
   background-color: #7e7e7e;
-  text-align: center; }
-
+  text-align:center;
+ }
 
 #scary {
   text-align: center; }
@@ -91,12 +61,14 @@ select, button {
 
 .text-muted {
   text-align: right; }
+
 #musicList {
   text-align: center; }
 
-.musicPic {
-  width: 275px;
-  height: 275px; }
+  .musicPic {
+    width: 275px;
+    height: 275px;
+  }
 
 #bookList {
   text-align: center; }
@@ -129,7 +101,6 @@ select, button {
 
 #movie-logo {
   width: 7%; }
-
 /*.col-lg-12{
   text-align:center;
   padding:1%;
