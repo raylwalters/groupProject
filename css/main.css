@@ -35,8 +35,25 @@ body {
 
 #headMusic {
   text-align: center;
+  font-size: 36px;
+  padding: 3em;
+  background-image: url('../images/popcorn.jpg');
+  background-repeat: no-repeat;
+  height: 100% auto;
+  overflow: auto;
+  width: 100%;
 }
-
+#headBooks {
+  text-align: center;
+  font-size: 36px;
+  padding: 3em;
+  background-image: url('../images/popcorn.jpg');
+  background-repeat: no-repeat;
+  height: 100% auto;
+  overflow: auto;
+  width: 100%;
+}
+}
 
 #textAndImage {
   text-align: center; }
