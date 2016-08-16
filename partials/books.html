@@ -1,15 +1,33 @@
 <!doctype html>
-<form name="myForm">
-    <label for="repeatSelect"> Genre: </label>
-    <select ng-change="saveId(info)" name="repeatSelect" id="repeatSelect" ng-model="info.id">
-        <option ng-repeat="option in info.availableOptions" value="{{option.id}}">{{option.name}}</option>
-    </select>
-</form>
 
-<div ng-repeat="book in books">
+<div class="container-fluid" id="head">
+  <div class="row">
+	   <div class="col-md-12">
+		     <h1>Books</h1>
+	   </div>
+  </div>
+</div>
 
-    <a target=_blank ng-href="{{book.accessInfo.webReaderLink}}"><img ng-src="{{book.volumeInfo.imageLinks.smallThumbnail}}" alt="Sup"></a>
-    <h2>{{book.volumeInfo.title}}</h2>
+
+<div class="row">
+  <div class="col-md-3">
+    <form name="myForm">
+        <label for="repeatSelect"> Genre: </label>
+        <select ng-change="saveId(info)" name="repeatSelect" id="repeatSelect" ng-model="info.id">
+            <option ng-repeat="option in info.availableOptions" value="{{option.id}}">{{option.name}}</option>
+        </select>
+    </form>
+  </div>
+</div>
+
+
+<div class="row" id="bookList">
+  <div class="col-md-4" ng-repeat="book in books">
+    <h3 class="book-title">{{book.volumeInfo.title}}</h3>
     <h4>{{book.volumeInfo.authors[0]}}</h4>
-    <p>{{book.volumeInfo.description}}</p>
+        <a target=_blank ng-href="{{book.accessInfo.webReaderLink}}"><img class="two" ng-src="{{book.volumeInfo.imageLinks.smallThumbnail}}" alt="Sup"></a>
+        <!-- <h3>{{book.volumeInfo.title}}</h3>
+        <h4>{{book.volumeInfo.authors[0]}}</h4> -->
+        <p class="bookScroll">{{book.volumeInfo.description}}</p>
+  </div>
 </div>
