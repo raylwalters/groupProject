@@ -6,7 +6,7 @@ body {
 
 .nav li {
   display: inline-block;
-  font-size: 18px; 
+  font-size: 18px;
   z-index:99999999999;
   color:#A6BDBF;
   }
@@ -24,7 +24,7 @@ left:32%;
 	text-align:center;
 }
 #text {
-	position:absolute; 
+	position:absolute;
 	z-index:99999;
 	top:30%;
 	left:22%;
@@ -148,3 +148,46 @@ select, button{
   text-align:center;
   padding:1%;
 }*/
+#head {
+  font-family: 'Volkhov', serif;
+  text-align: center;
+  font-size: 36px;
+  padding: 3em;
+  font-size: 18px;
+  z-index: 9999;
+  color: #F7FFF6;
+  left: 32%; }
+
+#headMovies {
+  text-align: center;
+  font-size: 36px;
+  padding: 3em;
+  background-image: url('../images/popcorn.jpg');
+  background-repeat: no-repeat;
+  height: 100% auto;
+  overflow: auto;
+  width: 100%;
+
+}
+
+#headMusic {
+  text-align: center;
+  font-size: 36px;
+  padding: 3em;
+  background-image: url('../images/popcorn.jpg');
+  background-repeat: no-repeat;
+  height: 100% auto;
+  overflow: auto;
+  width: 100%;
+}
+#headBooks {
+  text-align: center;
+  font-size: 36px;
+  padding: 3em;
+  background-image: url('../images/popcorn.jpg');
+  background-repeat: no-repeat;
+  height: 100% auto;
+  overflow: auto;
+  width: 100%;
+}
+}
