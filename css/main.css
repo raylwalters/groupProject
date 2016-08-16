@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   padding-top: 70px;
   background-color: #2A2B2E;
@@ -8,40 +7,12 @@ body {
   display: inline-block;
   font-size: 18px; }
 
-/*trying to make the hermix logo go to the right corner of nav bar
-.navbar-brand {
-  text-align: right;
- }*/
 #head {
+  font-family: 'Volkhov', serif;
   text-align: center;
   font-size: 36px;
-  padding: 3em;
-  z-index: 9999;
-  color: #F7FFF6;
-  left: 32%; }
-
-#textAndImage {
-  text-align: center; }
-
-#text {
-  position: absolute;
-  z-index: 99999;
-  top: 30%;
-  left: 22%;
-  color: #F7FFF6;
-  font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace; }
-
-#name {
-  font-size: 80px;
-  top: 15%; }
-
-video {
-  z-index: -1247;
-  max-width: 90%;
-  max-height: 15%;
-  background-size: cover;
-  overflow: hidden;
-  align-content: center; }
+  background-color: #6D1F1A;
+  padding: 3em; }
 
 #desc {
   text-align: center;
@@ -89,6 +60,7 @@ select, button {
 
 .text-muted {
   text-align: right; }
+
 #musicList {
   text-align: center; }
 
@@ -115,7 +87,7 @@ select, button {
 /*Movie CSS*/
 .box {
   width: 70%;
-  height: 120px;
+  height: 165px;
   overflow: scroll;
   float: right; }
 
@@ -123,7 +95,8 @@ select, button {
   height: 50px; }
 
 .col-md-4 {
-  padding: 3%; }
+  padding: 3%;
+  float: left; }
 
 #movie-logo {
   width: 7%; }
@@ -132,4 +105,3 @@ select, button {
   text-align:center;
   padding:1%;
 }*/
-
