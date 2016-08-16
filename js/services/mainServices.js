@@ -21,7 +21,7 @@ app.factory('mainBooks',['$http', function($http){
 app.factory('mainMusic',['$http', function($http){
 	return{
 		data: function(){
-			return $http.get("https://api.spotify.com/v1/search?q=usher&type=artist");
+			return $http.get("https://api.spotify.com/v1/search?q=taylor+swift&type=artist");
 			}
 		};
 }]);
