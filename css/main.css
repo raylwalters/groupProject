@@ -1,6 +1,5 @@
-@charset "UTF-8";
 body {
-  padding-top: 70px;
+  /*padding-top: 70px;*/
   background-color: #2A2B2E;
   color: #F7FFF6; }
 
@@ -8,14 +7,11 @@ body {
   display: inline-block;
   font-size: 18px; }
 
-/*trying to make the hermix logo go to the right corner of nav bar
-.navbar-brand {
-  text-align: right;
- }*/
 #head {
   text-align: center;
   font-size: 36px;
   padding: 3em;
+  font-size: 18px;
   z-index: 9999;
   color: #F7FFF6;
   left: 32%; }
@@ -56,6 +52,11 @@ p {
 .navbar {
   background-color: #7e7e7e; }
 
+#provider {
+  width: 25%;
+  height: auto;
+  bottom: 5%; }
+
 a {
   color: #6D1F1A; }
 
@@ -89,6 +90,7 @@ select, button {
 
 .text-muted {
   text-align: right; }
+
 #musicList {
   text-align: center; }
 
@@ -132,4 +134,3 @@ select, button {
   text-align:center;
   padding:1%;
 }*/
-
