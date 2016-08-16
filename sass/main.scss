@@ -31,11 +31,12 @@ a{
   color:#6D1F1A;
 }
 form{
+  display:block;
     color:#D7D5CF;
     padding:5%;
 }
-button{
-  margin:3%;
+button, select{
+  margin:1%;
 }
 select, button{
   color:black;
@@ -89,7 +90,7 @@ select, button{
 /*Movie CSS*/
 .box {
   width: 70%;
-  height: 120px;
+  height: 160px;
   overflow: scroll;
   float: right; }
 
@@ -101,6 +102,13 @@ select, button{
 
 #movie-logo {
   width: 7%; }
+.col-sm-12{
+  text-align: center;
+}
+#query{
+  width:20%;
+  display:inline;
+}
 /*.col-lg-12{
   text-align:center;
   padding:1%;
