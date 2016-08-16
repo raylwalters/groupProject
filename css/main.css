@@ -1,6 +1,11 @@
 body {
   padding-top: 70px;
+<<<<<<< HEAD
   background-color: #011A1D;
+=======
+
+  background-color: #2A2B2E;
+>>>>>>> music
   color: #F7FFF6; }
 
 .nav li {
@@ -18,6 +23,19 @@ body {
   z-index: 9999;
   color: #F7FFF6;
   left: 32%; }
+
+#headMovies {
+  text-align: center;
+  font-size: 36px;
+  padding: 3em;
+  /*background-color: #ccc;*/
+  background-image: url('../images/popcorn.jpg');
+  background-repeat: no-repeat;
+  /*height: 100% auto;*/
+  width: 100% auto;
+
+}
+
 
 #textAndImage {
   text-align: center; }
@@ -42,12 +60,15 @@ video {
   overflow: hidden;
   align-content: center; }
 
+
 #desc {
   text-align: center;
   font-size: 24px; }
 
 .title {
-  text-align: left; }
+  text-align: left;
+  margin-left: 1.5em;
+ }
 
 p {
   font-size: 18px; }
@@ -78,7 +99,11 @@ select, button {
 .headLink {
   padding: 1%;
   background-color: #7e7e7e;
-  text-align: center; }
+  text-align: center;
+  color: #fff;
+
+}
+
 
 #scary {
   text-align: center; }
