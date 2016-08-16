@@ -18,6 +18,40 @@ body {
   color: #F7FFF6;
   left: 32%; }
 
+
+#headMovies {
+  text-align: center;
+  font-size: 36px;
+  padding: 3em;
+  background-image: url('../images/popcorn.jpg');
+  background-repeat: no-repeat;
+  height: 100% auto;
+  overflow: auto;
+  width: 100%;
+
+}
+
+#headMusic {
+  text-align: center;
+  font-size: 36px;
+  padding: 3em;
+  background-image: url('../images/popcorn.jpg');
+  background-repeat: no-repeat;
+  height: 100% auto;
+  overflow: auto;
+  width: 100%;
+}
+#headBooks {
+  text-align: center;
+  font-size: 36px;
+  padding: 3em;
+  background-image: url('../images/popcorn.jpg');
+  background-repeat: no-repeat;
+  height: 100% auto;
+  overflow: auto;
+  width: 100%;
+}
+
 #textAndImage {
   text-align: center; }
 
@@ -141,9 +175,6 @@ select, button {
   width: 20%;
   display: inline; }
 
-#headmusic {
-  background-image: url("../images/music.jpg");
-  background-repeat: no-repeat; }
 
 /*.col-lg-12{
   text-align:center;
