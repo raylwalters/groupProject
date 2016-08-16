@@ -92,7 +92,7 @@ select, button {
   width: 10em; }
 
 .text-muted {
-  text-align: right; }
+  text-align: center; }
 
 #musicList {
   text-align: center; }
@@ -183,6 +183,5 @@ select, button {
   background-image: url("../images/books.jpeg");
   background-repeat: no-repeat;
   height: 50% auto;
-  width: 50%; 
+  width: 50%;
   }
-
