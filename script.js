@@ -11,5 +11,14 @@
 
 //SCRIPT FOR LETTERING PLUGIN
 $(document).ready(function(){
-  $("#head").lettering();
+  // $("#head").lettering();
+
+  $(".flat-icon").flatshadow({
+  color: "#3498DB",
+          angle: "SE",
+              fade: false,
+          boxShadow: false // Accept full 6 digit hex color (#000000)
+  });
+
+
 });

@@ -1,6 +1,6 @@
 body {
   padding-top: 70px;
-  /*background-color: black;*/
+  /*background-color: #ccc;*/
  }
 
 .nav li {
@@ -11,24 +11,62 @@ body {
   font-family: 'Volkhov', serif;
   text-align: center;
   font-size: 36px;
-  background-color: #2BC016;
-  padding: 3em; }
+  height: 100%;
+  width: 100%;
+  padding: 3em;
+}
 
+#headMovies {
+    font-family: 'Volkhov', serif;
+    text-align: center;
+    font-size: 36px;
+    /*background-color: #FFEEDB;*/
+    /*background-image: url(stockphoto.jpg);*/
+    padding: 3em;
+}
+#headMusic {
+    font-family: 'Volkhov', serif;
+    text-align: center;
+    font-size: 36px;
+    /*background-color: #FFEEDB;*/
+    /*background-image: url(stockphoto.jpg);*/
+    padding: 3em;
+}#headBooks {
+    font-family: 'Volkhov', serif;
+    text-align: center;
+    font-size: 36px;
+    /*background-color: #FFEEDB;*/
+    /*background-image: url(stockphoto.jpg);*/
+    padding: 3em;
+}
 #desc {
   text-align: center;
   font-size: 24px; }
 
 .title {
-  text-align: left; }
+  text-align: left;
+  margin-left: 1.5em;
+ }
 
 p {
   font-size: 18px; }
 
 .headLink {
-  /*padding: 1em;*/
+  margin-left: 1em;
   background-color: #ccc;
+  color: black;
+  font-size: 20px;
  }
-
+.flat-icon {
+    padding:23px 28px;
+    font-size: 45px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 100%;
+    overflow: hidden;
+    text-transform: uppercase;
+    margin-right: 15px;
+}
 #scary {
   text-align: center; }
 
