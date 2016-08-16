@@ -8,10 +8,7 @@ body {
   display: inline-block;
   font-size: 18px; }
 
-/*trying to make the hermix logo go to the right corner of nav bar
-.navbar-brand {
-  text-align: right;
- }*/
+
 #head {
   text-align: center;
   font-size: 36px;
@@ -132,4 +129,3 @@ select, button {
   text-align:center;
   padding:1%;
 }*/
-
