@@ -3,19 +3,22 @@
 <div class="container-fluid" id="head">
   <div class="row">
 	   <div class="col-md-12">
-		     <h1>books</h1>
+		     <h1>Books</h1>
 	   </div>
   </div>
 </div>
 
 
-
-<form name="myForm">
-    <label for="repeatSelect"> Genre: </label>
-    <select ng-change="saveId(info)" name="repeatSelect" id="repeatSelect" ng-model="info.id">
-        <option ng-repeat="option in info.availableOptions" value="{{option.id}}">{{option.name}}</option>
-    </select>
-</form>
+<div class="row">
+  <div class="col-md-3">
+    <form name="myForm">
+        <label for="repeatSelect"> Genre: </label>
+        <select ng-change="saveId(info)" name="repeatSelect" id="repeatSelect" ng-model="info.id">
+            <option ng-repeat="option in info.availableOptions" value="{{option.id}}">{{option.name}}</option>
+        </select>
+    </form>
+  </div>
+</div>
 
 
 <div class="row" id="bookList">
