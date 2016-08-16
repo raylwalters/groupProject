@@ -21,7 +21,11 @@ body {
   text-align: center;
   font-size: 36px;
   padding: 3em;
-  background-color: #ccc;
+  /*background-color: #ccc;*/
+  background-image: url('../images/popcorn.jpg');
+  background-repeat: no-repeat;
+  /*height: 100% auto;*/
+  width: 100% auto;
 
 }
 
@@ -81,7 +85,10 @@ select, button {
 .headLink {
   padding: 1%;
   background-color: #7e7e7e;
-  text-align: center; }
+  text-align: center;
+  color: #fff;
+
+}
 
 
 #scary {
