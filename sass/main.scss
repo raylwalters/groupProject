@@ -164,8 +164,9 @@ select, button{
   padding: 3em;
   background-image: url('../images/popcorn.jpg');
   background-repeat: no-repeat;
+	// background-size: cover;
   height: 100% auto;
-  overflow: auto;
+  overflow: hidden;
   width: 100%;
 
 }
@@ -189,5 +190,4 @@ select, button{
   height: 100% auto;
   overflow: auto;
   width: 100%;
-}
 }
