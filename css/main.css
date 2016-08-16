@@ -4,7 +4,6 @@ body {
   background-color: #2A2B2E;
   color: #F7FFF6; }
 
-
 .nav li {
   display: inline-block;
   font-size: 18px; }
@@ -17,6 +16,15 @@ body {
   z-index: 9999;
   color: #F7FFF6;
   left: 32%; }
+
+#headMovies {
+  text-align: center;
+  font-size: 36px;
+  padding: 3em;
+  background-color: #ccc;
+
+}
+
 
 #textAndImage {
   text-align: center; }
