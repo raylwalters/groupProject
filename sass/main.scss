@@ -1,12 +1,14 @@
 body {
 	padding-top: 70px;
-	background-color: #2A2B2E;
+	background-color: #011A1D;
 	color:#F7FFF6;
  }
 
 .nav li {
   display: inline-block;
   font-size: 18px; 
+  z-index:99999999999;
+  color:#A6BDBF;
   }
 
 #head {
@@ -52,12 +54,13 @@ align-content:center;
 p {
   font-size: 18px; }
 .navbar{
-  background-color: #7e7e7e;
+  background-color: #020202;
+  color:#A6BDBF;
 }
 #provider {
-	width:25%;
+	width:15%;
 	height:auto;
-	bottom:5%;
+	right:75%;
 }
 a{
   color:#6D1F1A;
