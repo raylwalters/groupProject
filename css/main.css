@@ -60,7 +60,8 @@ p {
 
 .navbar {
   background-color: black;
-  /*color: #A6BDBF; */ }
+  /*color: #A6BDBF; */
+  border-color: black; }
 
 #provider {
   width: 15%;
