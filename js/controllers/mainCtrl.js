@@ -21,4 +21,10 @@ app.controller('mainCtrl',['$scope','mainMovies','mainBooks','mainMusic', functi
 		console.log(response);
 	});
 
+	$scope.myInterval = 5000;
+	$scope.noWrapSlides = false;
+	$scope.active = 0;
+	var slides = $scope.slides = [];
+	var currIndex = 0;
+
 }]);

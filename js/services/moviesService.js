@@ -26,7 +26,7 @@ app.factory('movieList',['$http', function($http){
 	// };
 
 	function sendData(){
-		var target = Math.floor(Math.random() * (21-1)+1);
+		var target = Math.floor(Math.random() * (41-1)+1);
 		console.log(target);
 			return $http({
 
