@@ -161,11 +161,29 @@ select, button{
   color: #F7FFF6;
   left: 32%; }
 
+	#shineMovie {
+	  font-size: 72px;
+	  color: white;
+		font-family: 'Poiret One', cursive;
+		// font-family: 'Poppins', sans-serif; --> nope
+		// font-family: 'Abril Fatface', cursive; --> not quite
+		font-weight: bold;
+		letter-spacing: 0.5em;
+	}
+	#shineMusic {
+		font-size: 72px;
+		color: black;
+		font-family: 'Poiret One', cursive;
+		font-weight: bold;
+		letter-spacing: 0.5em;
+	}
+
 #headMovies {
   text-align: center;
   font-size: 36px;
   padding: 1em;
   background-image: url('../images/movie-reel.jpg');
+	// background-color: white;
   background-repeat: center;
   height: 5em;
   overflow: hidden;
@@ -193,4 +211,3 @@ select, button{
   overflow: auto;
   width: 100%;
 }
-
