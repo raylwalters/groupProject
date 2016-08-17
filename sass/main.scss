@@ -189,7 +189,9 @@ select, button{
 	font-family: 'Poppins', sans-serif;
 
  }
-
+.col-md-4 {
+	padding: 2%;
+}
 .col-md-2 {
 	padding: 3%;
 }
@@ -282,4 +284,10 @@ select, button{
 }
 .musicWrapper {
 	margin-left: 7em;
+	padding-bottom: 3em;
+}
+.wrapperBooks {
+	padding-bottom: 3em;
+	margin-left: 3em;
+	margin-right: 3em;
 }
