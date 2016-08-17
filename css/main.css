@@ -159,6 +159,9 @@ select, button {
   color: white;
   font-family: 'Poppins', sans-serif; }
 
+.col-md-4 {
+  padding: 2%; }
+
 .col-md-2 {
   padding: 3%; }
 
@@ -243,7 +246,8 @@ h4 {
   margin-right: 3em; }
 
 .musicWrapper {
-  margin-left: 7em; }
+  margin-left: 7em;
+  padding-bottom: 3em; }
 
 .wrapperBooks {
   padding-bottom: 3em;
