@@ -110,7 +110,6 @@ select, button{
 	font-family: 'Poppins', sans-serif;
 	color: white;
 	margin-left: 2.3em;
-
  }
 
 #scary {
@@ -175,14 +174,7 @@ select, button{
   width:20%;
   display:inline;
 }
-// #headmusic{
-//   background-image: url('../images/music.jpg');
-//   background-repeat: no-repeat;
-// }
-/*.col-lg-12{
-  text-align:center;
-  padding:1%;
-}*/
+
 #head {
   // font-family: 'Volkhov', serif;
   text-align: center;
@@ -196,7 +188,6 @@ select, button{
 	#shineMovie {
 	  font-size: 72px;
 	  color: white;
-		// font-family: 'Poiret One', cursive;
 		font-family: 'Poppins', sans-serif;
 		font-weight: bold;
 		letter-spacing: 0.5em;
@@ -204,7 +195,6 @@ select, button{
 	#shineMusic {
 		font-size: 72px;
 		color: white;
-		// font-family: 'Poiret One', cursive;
 		font-family: 'Poppins', sans-serif;
 		font-weight: bold;
 		letter-spacing: 0.5em;
@@ -212,7 +202,6 @@ select, button{
 	#shineBooks {
 		font-size: 72px;
 		color: white;
-		// font-family: 'Poiret One', cursive;
 		font-family: 'Poppins', sans-serif;
 		font-weight: bold;
 		letter-spacing: 0.5em;
@@ -222,32 +211,30 @@ select, button{
   text-align: center;
   font-size: 36px;
   padding: 1em;
-  background-image: url('../images/movie_reel.jpg');
-  /*background-color: white;*/
-  background-repeat: center;
-  height: 5em;
-  overflow: hidden;
+  background-image: url('../images/movie3.jpg');
+  background-repeat:no-repeat;
+  background-size: auto 500px;
   width: 100%;
-
+  height: 8.5em;
 }
 
 #headMusic {
   text-align: center;
   font-size: 36px;
   padding: 1em;
-  background-image: url('../images/music_keys.jpg');
-  background-repeat: center repeat;
-  background-size:auto 200px;
+  background-image: url('../images/music_keys.jpeg');
+  background-repeat:no-repeat;
+  background-size:auto 500px;
   width: 100%;
-  height:5em;
+  height:8.5em;
 }
 #headBooks {
   text-align: center;
   font-size: 36px;
   padding: 1em;
-  background-image:url('../images/books.jpg');
-  background-repeat: repeat-x;
-  height: 5em;
-  overflow: auto;
+  background-image:url('../images/books.jpeg');
+  background-repeat:no-repeat;
+  background-size: auto 500px;
+  height: 8.5em;
   width: 100%;
 }
