@@ -42,8 +42,12 @@ select, button{
 }
 .headLink {
   padding: 1%;
-  background-color: #7e7e7e;
-  text-align:center;
+	width: auto;
+  text-align:left;
+	font-family: 'Poppins', sans-serif;
+	color: white;
+	margin-left: 2.3em;
+
  }
 
 #scary {
@@ -101,7 +105,75 @@ select, button{
 
 #movie-logo {
   width: 7%; }
-/*.col-lg-12{
-  text-align:center;
-  padding:1%;
-}*/
+
+.col-sm-12{
+  text-align: center;
+}
+#query{
+  width:20%;
+  display:inline;
+}
+
+#head {
+  // font-family: 'Volkhov', serif;
+  text-align: center;
+  font-size: 36px;
+  padding: 3em;
+  font-size: 18px;
+  z-index: 9999;
+  color: #F7FFF6;
+  left: 32%; }
+
+	#shineMovie {
+	  font-size: 72px;
+	  color: white;
+		font-family: 'Poppins', sans-serif;
+		font-weight: bold;
+		letter-spacing: 0.5em;
+	}
+	#shineMusic {
+		font-size: 72px;
+		color: white;
+		font-family: 'Poppins', sans-serif;
+		font-weight: bold;
+		letter-spacing: 0.5em;
+	}
+	#shineBooks {
+		font-size: 72px;
+		color: white;
+		font-family: 'Poppins', sans-serif;
+		font-weight: bold;
+		letter-spacing: 0.5em;
+	}
+
+#headMovies {
+  text-align: center;
+  font-size: 36px;
+  padding: 1em;
+  background-image: url('../images/movie3.jpg');
+  background-repeat:no-repeat;
+  background-size: auto 500px;
+  width: 100%;
+  height: 8.5em;
+}
+
+#headMusic {
+  text-align: center;
+  font-size: 36px;
+  padding: 1em;
+  background-image: url('../images/music_keys.jpeg');
+  background-repeat:no-repeat;
+  background-size:auto 500px;
+  width: 100%;
+  height:8.5em;
+}
+#headBooks {
+  text-align: center;
+  font-size: 36px;
+  padding: 1em;
+  background-image:url('../images/books.jpeg');
+  background-repeat:no-repeat;
+  background-size: auto 500px;
+  height: 8.5em;
+  width: 100%;
+}
