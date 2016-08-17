@@ -1,11 +1,12 @@
 body {
-	padding-top: 70px;
-	background-color: black;
-	// color:#F7FFF6;
+  padding-top: 70px;
+  background-color: #2A2B2E;
+  color:#F7FFF6;
  }
 
 .nav li {
   display: inline-block;
+<<<<<<< HEAD
   font-size: 18px;
   z-index:99999999999;
 
@@ -55,6 +56,16 @@ background-size:cover;
 overflow:hidden;
 align-content:center;
 }
+=======
+  font-size: 18px; }
+
+#head {
+  font-family: 'Volkhov', serif;
+  text-align: center;
+  font-size: 36px;
+  background-color: #6D1F1A;
+  padding: 3em; }
+>>>>>>> d2ddc42855f133a3b85b0b06ecb5ff568694d344
 
 #desc {
   text-align: center;
@@ -65,6 +76,7 @@ align-content:center;
 
 p {
   font-size: 18px; }
+<<<<<<< HEAD
 
 .navbar {
 	  background-color: black;
@@ -86,15 +98,15 @@ a{
 }
 a:hover {
 	text-decoration: none;
-	
+
+
 }
 form{
-  display:block;
     color:#D7D5CF;
     padding:5%;
 }
-button, select{
-  margin:1%;
+button{
+  margin:3%;
 }
 select, button{
   color:black;
@@ -102,7 +114,6 @@ select, button{
 .headLink {
   padding: 1%;
 	width: auto;
-  // background-color: #c0c0c0;
   text-align:left;
 	font-family: 'Poppins', sans-serif;
 	color: white;
@@ -124,7 +135,7 @@ select, button{
   width: 10em; }
 
 .text-muted {
-  text-align: center; }
+  text-align: right; }
 
 #musicList {
   text-align: center; }
@@ -157,9 +168,13 @@ select, button{
 /*Movie CSS*/
 .box {
   width: 70%;
+<<<<<<< HEAD
   height: 160px;
 	font-size: 15px;
 	letter-spacing: 0.05em;
+=======
+  height: 120px;
+>>>>>>> d2ddc42855f133a3b85b0b06ecb5ff568694d344
   overflow: scroll;
 	font-family: Arial;
 	color: white;
@@ -191,14 +206,7 @@ select, button{
   width:20%;
   display:inline;
 }
-// #headmusic{
-//   background-image: url('../images/music.jpg');
-//   background-repeat: no-repeat;
-// }
-/*.col-lg-12{
-  text-align:center;
-  padding:1%;
-}*/
+
 #head {
   // font-family: 'Volkhov', serif;
   text-align: center;
@@ -212,7 +220,6 @@ select, button{
 	#shineMovie {
 	  font-size: 72px;
 	  color: white;
-		// font-family: 'Poiret One', cursive;
 		font-family: 'Poppins', sans-serif;
 		font-weight: bold;
 		letter-spacing: 0.5em;
@@ -220,7 +227,6 @@ select, button{
 	#shineMusic {
 		font-size: 72px;
 		color: white;
-		// font-family: 'Poiret One', cursive;
 		font-family: 'Poppins', sans-serif;
 		font-weight: bold;
 		letter-spacing: 0.5em;
@@ -228,7 +234,6 @@ select, button{
 	#shineBooks {
 		font-size: 72px;
 		color: white;
-		// font-family: 'Poiret One', cursive;
 		font-family: 'Poppins', sans-serif;
 		font-weight: bold;
 		letter-spacing: 0.5em;
@@ -238,33 +243,46 @@ select, button{
   text-align: center;
   font-size: 36px;
   padding: 1em;
+<<<<<<< HEAD
   background-image: url('../images/movie-reel.jpg');
   // background-color: white;
   background-repeat: center;
   height: 5em;
   overflow: hidden;
+=======
+  background-image: url('../images/movie3.jpg');
+  background-repeat:no-repeat;
+  background-size: auto 500px;
+>>>>>>> d2ddc42855f133a3b85b0b06ecb5ff568694d344
   width: 100%;
-
+  height: 8.5em;
 }
 
 #headMusic {
   text-align: center;
   font-size: 36px;
   padding: 1em;
-  background-image: url('../images/music_keys.jpg');
-  background-repeat: center repeat;
-  background-size:auto 200px;
+  background-image: url('../images/music_keys.jpeg');
+  background-repeat:no-repeat;
+  background-size:auto 500px;
   width: 100%;
-  height:5em;
+  height:8.5em;
 }
 #headBooks {
   text-align: center;
   font-size: 36px;
   padding: 1em;
+<<<<<<< HEAD
   background-image:url('../images/books2.jpg');
   background-repeat: repeat-x;
   height: 5em;
   overflow: auto;
+=======
+  background-image:url('../images/books.jpeg');
+  background-repeat:no-repeat;
+  background-size: auto 500px;
+  height: 8.5em;
+>>>>>>> d2ddc42855f133a3b85b0b06ecb5ff568694d344
   width: 100%;
 }
 .wrapper {
