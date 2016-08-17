@@ -48,6 +48,9 @@ left:32%;
 }
 #tagline {
 font-family: 'Poppins', sans-serif;
+letter-spacing: 0.1em;
+word-spacing: 0.3em;
+color: #FFCA3A;
 }
 video {
 z-index:-1247;
@@ -77,8 +80,11 @@ p {
 	right:75%;
 }
 a{
-	color: white;
+	// color: white;
+	color: #FFEDBC;
+
 	font-family: 'Poppins', sans-serif;
+	letter-spacing: 0.2em;
 
 
 }
@@ -96,9 +102,10 @@ select, button{
 .headLink {
   padding: 1%;
   // background-color: #c0c0c0;
-  text-align:center;
+  text-align:left;
 	font-family: 'Poppins', sans-serif;
 	color: white;
+	margin-left: 2.3em;
 
  }
 
@@ -200,7 +207,7 @@ select, button{
 	}
 	#shineBooks {
 		font-size: 72px;
-		color: black;
+		color: white;
 		// font-family: 'Poiret One', cursive;
 		font-family: 'Poppins', sans-serif;
 		font-weight: bold;

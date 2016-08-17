@@ -35,7 +35,10 @@ body {
   letter-spacing: 0.1em; }
 
 #tagline {
-  font-family: 'Poppins', sans-serif; }
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.1em;
+  word-spacing: 0.3em;
+  color: #FFCA3A; }
 
 video {
   z-index: -1247;
@@ -65,8 +68,9 @@ p {
   right: 75%; }
 
 a {
-  color: white;
-  font-family: 'Poppins', sans-serif; }
+  color: #FFEDBC;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.2em; }
 
 form {
   display: block;
@@ -81,9 +85,10 @@ select, button {
 
 .headLink {
   padding: 1%;
-  text-align: center;
+  text-align: left;
   font-family: 'Poppins', sans-serif;
-  color: white; }
+  color: white;
+  margin-left: 2.3em; }
 
 #scary {
   text-align: center; }
@@ -176,7 +181,7 @@ select, button {
 
 #shineBooks {
   font-size: 72px;
-  color: black;
+  color: white;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   letter-spacing: 0.5em; }
@@ -194,7 +199,6 @@ select, button {
 #headMusic {
   text-align: center;
   font-size: 36px;
-
   padding: 1em;
   background-image: url("../images/music2.jpg");
   background-repeat: center repeat;
