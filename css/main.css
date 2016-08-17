@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Poiret One';
+  src: url(../font/PoiretOne-Regular.ttf); }
+
 body {
   padding-top: 70px;
   background-color: #011A1D;
@@ -26,7 +30,7 @@ body {
   top: 30%;
   left: 22%;
   color: #F7FFF6;
-  font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace; }
+  font-family: 'Poiret One', "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace; }
 
 #name {
   font-size: 80px;
@@ -50,9 +54,12 @@ video {
 p {
   font-size: 18px; }
 
-.navbar {
+.navbar-default {
   background-color: #020202;
-  color: #A6BDBF; }
+  border-color: #222222; }
+
+.navbar-default .navbar-brand {
+  color: #B3CBCD; }
 
 #provider {
   width: 15%;
@@ -153,6 +160,7 @@ select, button {
   text-align: center;
   font-size: 36px;
   padding: 3em;
+  font-size: 18px;
   z-index: 9999;
   color: #F7FFF6;
   left: 32%; }
@@ -161,18 +169,17 @@ select, button {
   text-align: center;
   font-size: 36px;
   padding: 3em;
-  background-image: url("../images/popcorn.jpg");
+  background-image: url("../images/movie_reel.jpg");
   background-repeat: no-repeat;
   height: 100% auto;
-  overflow: auto;
+  overflow: hidden;
   width: 100%; }
 
 #headMusic {
   text-align: center;
   font-size: 36px;
   padding: 3em;
-  background-image: url("../images/music2.jpg");
-  background-repeat: center repeat;
+  background-image: url("../images/music_keys.jpg");
   background-size: auto 200px;
   width: 100%; }
 
@@ -183,6 +190,5 @@ select, button {
   background-image: url("../images/books.jpeg");
   background-repeat: no-repeat;
   height: 50% auto;
-  width: 50%; 
-  }
-
+  overflow: auto;
+  width: 50%; }

@@ -1,3 +1,7 @@
+@font-face {
+	font-family:'Poiret One';
+	src:url(../font/PoiretOne-Regular.ttf);
+}
 body {
 	padding-top: 70px;
 	background-color: #011A1D;
@@ -28,10 +32,10 @@ left:32%;
 	top:30%;
 	left:22%;
 	color:#F7FFF6;
-	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+	font-family:'Poiret One', "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
 }
 #name {
-	font-size:80px;
+font-size:80px;
 	top:15%;
 }
 video {
@@ -52,9 +56,12 @@ align-content:center;
 
 p {
   font-size: 18px; }
-.navbar{
+.navbar-default{
   background-color: #020202;
-  color:#A6BDBF;
+  border-color:#222222;
+}
+.navbar-default .navbar-brand {
+	color:#B3CBCD;
 }
 #provider {
 	width:15%;
@@ -165,7 +172,7 @@ select, button{
   text-align: center;
   font-size: 36px;
   padding: 3em;
-  background-image: url('../images/popcorn.jpg');
+  background-image: url('../images/movie_reel.jpg');
   background-repeat: no-repeat;
 	// background-size: cover;
   height: 100% auto;
@@ -178,8 +185,7 @@ select, button{
   text-align: center;
   font-size: 36px;
   padding: 3em;
-  background-image: url('../images/music2.jpg');
-  background-repeat: center repeat;
+  background-image: url('../images/music_keys.jpg');
   background-size:auto 200px;
   width: 100%;
 }
