@@ -7,9 +7,6 @@ body {
   font-size: 18px;
   z-index: 99999999999; }
 
-.wrapper {
-  background-color: #c0c0c0; }
-
 #head {
   text-align: center;
   font-size: 36px;
@@ -31,7 +28,7 @@ body {
 #name {
   font-size: 90px;
   top: 15%;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Lobster Two', cursive;
   letter-spacing: 0.1em; }
 
 #tagline {
@@ -74,8 +71,7 @@ a {
   letter-spacing: 0.2em; }
 
 a:hover {
-  text-decoration: none;
-  color: red; }
+  text-decoration: none; }
 
 form {
   display: block;
@@ -123,7 +119,8 @@ select, button {
   text-align: center; }
 
 .book-title {
-  height: 70px; }
+  height: 70px;
+  color: white; }
 
 .two {
   height: 138px;
@@ -139,13 +136,19 @@ select, button {
 .box {
   width: 70%;
   height: 160px;
+  font-size: 15px;
+  letter-spacing: 0.05em;
   overflow: scroll;
+  font-family: Arial;
+  color: white;
   float: right; }
 
 .title-box {
-  height: 50px; }
+  height: 50px;
+  color: white;
+  font-family: 'Poppins', sans-serif; }
 
-.col-md-4 {
+.moreMovies {
   padding: 3%; }
 
 #movie-logo {
@@ -196,8 +199,7 @@ select, button {
   text-align: center;
   font-size: 36px;
   padding: 1em;
-  background-image: url("../images/movie_reel.jpg");
-  /*background-color: white;*/
+  background-image: url("../images/movie-reel.jpg");
   background-repeat: center;
   height: 5em;
   overflow: hidden;
@@ -217,8 +219,15 @@ select, button {
   text-align: center;
   font-size: 36px;
   padding: 1em;
-  background-image: url("../images/books.jpg");
+  background-image: url("../images/books2.jpg");
   background-repeat: repeat-x;
   height: 5em;
   overflow: auto;
   width: 100%; }
+
+.wrapper {
+  margin-left: 3em;
+  margin-right: 3em; }
+
+.musicWrapper {
+  margin-left: 7em; }

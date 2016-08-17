@@ -12,9 +12,6 @@ body {
   // color:#A6BDBF;
   }
 
-.wrapper {
-	background-color: #c0c0c0;
-}
 
 
 #head {
@@ -39,7 +36,7 @@ left:32%;
 #name {
 	font-size:90px;
 	top:15%;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Lobster Two', cursive;
 	// font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
 
 	letter-spacing: 0.1em;
@@ -68,13 +65,13 @@ align-content:center;
 
 p {
   font-size: 18px; }
-  
+
 .navbar {
 	  background-color: black;
 	  /*color: #A6BDBF; */
 		border-color: black;
 	}
-	
+
 #provider {
 	width:15%;
 	height:auto;
@@ -89,7 +86,7 @@ a{
 }
 a:hover {
 	text-decoration: none;
-	color: red;
+	
 }
 form{
   display:block;
@@ -132,20 +129,24 @@ select, button{
 #musicList {
   text-align: center; }
 
-  .musicPic {
-    width: 275px;
-    height: 275px;
-  }
+.musicPic {
+  width: 275px;
+	height: 275px;
+}
 
 #bookList {
   text-align: center; }
 
 .book-title {
-  height: 70px; }
+  height: 70px;
+	color: white;
+ }
 
 .two {
   height: 138px;
-  width: 92px; }
+  width: 92px;
+
+}
 
 .bookScroll {
   float: right;
@@ -157,17 +158,32 @@ select, button{
 .box {
   width: 70%;
   height: 160px;
+	font-size: 15px;
+	letter-spacing: 0.05em;
   overflow: scroll;
+	font-family: Arial;
+	color: white;
   float: right; }
 
 .title-box {
-  height: 50px; }
+  height: 50px;
+	color: white;
+	font-family: 'Poppins', sans-serif;
 
-.col-md-4 {
-  padding: 3%; }
+ }
+ //button on movies html that reloads options//
+.reload {
+
+}
+
+//class that displays the movies on the home.html //
+.moreMovies {
+  padding: 3%;
+}
 
 #movie-logo {
   width: 7%; }
+
 .col-sm-12{
   text-align: center;
 }
@@ -222,8 +238,8 @@ select, button{
   text-align: center;
   font-size: 36px;
   padding: 1em;
-  background-image: url('../images/movie_reel.jpg');
-  /*background-color: white;*/
+  background-image: url('../images/movie-reel.jpg');
+  // background-color: white;
   background-repeat: center;
   height: 5em;
   overflow: hidden;
@@ -245,9 +261,16 @@ select, button{
   text-align: center;
   font-size: 36px;
   padding: 1em;
-  background-image:url('../images/books.jpg');
+  background-image:url('../images/books2.jpg');
   background-repeat: repeat-x;
   height: 5em;
   overflow: auto;
   width: 100%;
+}
+.wrapper {
+	margin-left: 3em;
+	margin-right: 3em;
+}
+.musicWrapper {
+	margin-left: 7em;
 }

@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-// $(".headlink")
+
 
   // var shine = new Shine(document.getElementById('shineMovie'));
   // window.addEventListener('mousemove', function(event) {

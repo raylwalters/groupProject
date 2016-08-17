@@ -15,7 +15,7 @@
 				<select ng-change="saveId(info)" name="repeatSelect" id="repeatSelect" ng-model="info.id">
 				    <option ng-repeat="option in info.availableOptions" value="{{option.id}}">{{option.name}}</option>
 				</select>
-				<button ng-click="saveId(info)">Reload</button>
+				<button class="reload" ng-click="saveId(info)">SHUFFLE</button>
 			</form>
 		</div>
 	</div>
@@ -24,12 +24,14 @@
 	<li id="one">1</li>
 	<li id="two">2</li>
 </ul> -->
+<div class="wrapper">
 <div class="row">
-	<div class="col-md-4" ng-repeat="movie in movies | orderBy:'title'">
+	<div class="col-md-6" ng-repeat="movie in movies | orderBy:'title'">
 		<h3 class="title-box">{{movie.title}}</h3>
-		<a target=_blank ng-href="https://www.google.com/#q= + {{movie.title}} + trailer"><img ng-src="{{image + movie.poster_path}}" alt="Poster"></a>
+		<a target=_blank ng-href="https://www.google.com/#q= + {{movie.title}} + trailer"><img ng-src="{{image + movie.poster_path}}" class="one" alt="Poster"></a>
 		<p class="box">{{movie.overview}}</p>
 	</div>
 </div>
+</div> <!-- wrapper -->
 
 <img id="movie-logo" src="images/PoweredByTMDB.png" alt="TMDB">
