@@ -1,63 +1,19 @@
 body {
-	padding-top: 70px;
-	background-color: black;
-	// color:#F7FFF6;
+  padding-top: 70px;
+  background-color: #2A2B2E;
+  color:#F7FFF6;
  }
 
 .nav li {
   display: inline-block;
-  font-size: 18px;
-  z-index:99999999999;
-
-  // color:#A6BDBF;
-  }
-
-.wrapper {
-	background-color: #c0c0c0;
-}
-
+  font-size: 18px; }
 
 #head {
-text-align:center;
-font-size:36px;
-padding:3em;
-z-index:9999;
-color:#F7FFF6;
-left:32%;
-}
-#textAndImage {
-	text-align:center;
-}
-#text {
-	position:absolute;
-	z-index:99999;
-	top:30%;
-	left:22%;
-	color:#F7FFF6;
-	// font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
-}
-#name {
-	font-size:90px;
-	top:15%;
-	font-family: 'Poppins', sans-serif;
-	// font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
-
-	letter-spacing: 0.1em;
-}
-#tagline {
-font-family: 'Poppins', sans-serif;
-letter-spacing: 0.1em;
-word-spacing: 0.3em;
-color: #FFCA3A;
-}
-video {
-z-index:-1247;
-max-width:90%;
-max-height:15%;
-background-size:cover;
-overflow:hidden;
-align-content:center;
-}
+  font-family: 'Volkhov', serif;
+  text-align: center;
+  font-size: 36px;
+  background-color: #6D1F1A;
+  padding: 3em; }
 
 #desc {
   text-align: center;
@@ -68,49 +24,26 @@ align-content:center;
 
 p {
   font-size: 18px; }
-  
-.navbar {
-	  background-color: black;
-	  /*color: #A6BDBF; */
-		border-color: black;
-	}
-	
-#provider {
-	width:15%;
-	height:auto;
-	right:75%;
+.navbar{
+  background-color: #7e7e7e;
 }
 a{
-	// color: white;
-	color: #FFEDBC;
-
-	font-family: 'Poppins', sans-serif;
-	letter-spacing: 0.2em;
-}
-a:hover {
-	text-decoration: none;
-	color: red;
+  color:#6D1F1A;
 }
 form{
-  display:block;
     color:#D7D5CF;
     padding:5%;
 }
-button, select{
-  margin:1%;
+button{
+  margin:3%;
 }
 select, button{
   color:black;
 }
 .headLink {
   padding: 1%;
-	width: auto;
-  // background-color: #c0c0c0;
-  text-align:left;
-	font-family: 'Poppins', sans-serif;
-	color: white;
-	margin-left: 2.3em;
-
+  background-color: #7e7e7e;
+  text-align:center;
  }
 
 #scary {
@@ -127,7 +60,7 @@ select, button{
   width: 10em; }
 
 .text-muted {
-  text-align: center; }
+  text-align: right; }
 
 #musicList {
   text-align: center; }
@@ -156,7 +89,7 @@ select, button{
 /*Movie CSS*/
 .box {
   width: 70%;
-  height: 160px;
+  height: 120px;
   overflow: scroll;
   float: right; }
 
@@ -168,86 +101,7 @@ select, button{
 
 #movie-logo {
   width: 7%; }
-.col-sm-12{
-  text-align: center;
-}
-#query{
-  width:20%;
-  display:inline;
-}
-// #headmusic{
-//   background-image: url('../images/music.jpg');
-//   background-repeat: no-repeat;
-// }
 /*.col-lg-12{
   text-align:center;
   padding:1%;
 }*/
-#head {
-  // font-family: 'Volkhov', serif;
-  text-align: center;
-  font-size: 36px;
-  padding: 3em;
-  font-size: 18px;
-  z-index: 9999;
-  color: #F7FFF6;
-  left: 32%; }
-
-	#shineMovie {
-	  font-size: 72px;
-	  color: white;
-		// font-family: 'Poiret One', cursive;
-		font-family: 'Poppins', sans-serif;
-		font-weight: bold;
-		letter-spacing: 0.5em;
-	}
-	#shineMusic {
-		font-size: 72px;
-		color: white;
-		// font-family: 'Poiret One', cursive;
-		font-family: 'Poppins', sans-serif;
-		font-weight: bold;
-		letter-spacing: 0.5em;
-	}
-	#shineBooks {
-		font-size: 72px;
-		color: white;
-		// font-family: 'Poiret One', cursive;
-		font-family: 'Poppins', sans-serif;
-		font-weight: bold;
-		letter-spacing: 0.5em;
-	}
-
-#headMovies {
-  text-align: center;
-  font-size: 36px;
-  padding: 1em;
-  background-image: url('../images/movie_reel.jpg');
-  /*background-color: white;*/
-  background-repeat: center;
-  height: 5em;
-  overflow: hidden;
-  width: 100%;
-
-}
-
-#headMusic {
-  text-align: center;
-  font-size: 36px;
-  padding: 1em;
-  background-image: url('../images/music_keys.jpg');
-  background-repeat: center repeat;
-  background-size:auto 200px;
-  width: 100%;
-  height:5em;
-}
-#headBooks {
-  text-align: center;
-  font-size: 36px;
-  padding: 1em;
-  background-image:url('../images/books.jpg');
-  background-repeat: repeat-x;
-  height: 5em;
-  overflow: auto;
-  width: 100%;
-}

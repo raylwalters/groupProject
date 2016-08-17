@@ -9,21 +9,21 @@ gulp.task("default", function(){
     }
   });
   gulp.watch("./*.html").on("change", browserSync.reload);
-  gulp.watch("./**/*.css").on("change", browserSync.reload);
-  gulp.watch("./**/*.js").on("change", browserSync.reload);
-  gulp.watch('./Sass/**/*.scss', ['Sass']);
+  gulp.watch("./*/*.css").on("change", browserSync.reload);
+  gulp.watch("./*/*.js").on("change", browserSync.reload);
+  gulp.watch('./Sass/*/*.scss', ['Sass']);
 })
 
-//gulp.task("browser-sync", function(){
-  //browserSync.init({
-   // server: {
-     // baseDir: "./"
-  //  }
- // });
- // gulp.watch("./*.html").on("change", browserSync.reload);
- // gulp.watch("./**/*.css").on("change", browserSync.reload);
-  //gulp.watch("./**/*.js").on("change", browserSync.reload);
-//});
+gulp.task("browser-sync", function(){
+  browserSync.init({
+   server: {
+     baseDir: "./"
+   }
+ });
+ gulp.watch("./*.html").on("change", browserSync.reload);
+ gulp.watch("./**/*.css").on("change", browserSync.reload);
+  gulp.watch("./**/*.js").on("change", browserSync.reload);
+});
 gulp.task('Sass', function () {
 	return gulp.src('./Sass/**/*.scss')
 	.pipe(Sass().on('error', Sass.logError))
