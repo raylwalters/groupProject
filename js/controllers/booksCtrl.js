@@ -13,7 +13,7 @@ app.controller('booksCtrl', ['$scope', 'bookList', function($scope, bookList) {
     function getUrl() {
         bookList.sendData().then(function(response){
             $scope.books = response;
-			$scope.links = response.items.accessInfo.webReaderLink;
+			// $scope.links = response.items.accessInfo.webReaderLink;
             //$scope.image = ' ' ;//stuff;
         });
 }
@@ -37,7 +37,7 @@ app.controller('booksCtrl', ['$scope', 'bookList', function($scope, bookList) {
         {id:'Thriller', name: 'Thriller'},
         {id:'War', name: 'War'},
         {id:'Western', name: 'Western'}
-        
+
         ]
     };
 
