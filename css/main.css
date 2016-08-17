@@ -92,7 +92,7 @@ select, button {
   width: 10em; }
 
 .text-muted {
-  text-align: center; }
+  text-align: right; }
 
 #musicList {
   text-align: center; }
@@ -158,6 +158,20 @@ select, button {
   color: #F7FFF6;
   left: 32%; }
 
+#shineMovie {
+  font-size: 72px;
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  letter-spacing: 0.5em; }
+
+#shineMusic {
+  font-size: 72px;
+  color: black;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  letter-spacing: 0.5em; }
+
 #headMovies {
   text-align: center;
   font-size: 36px;
@@ -172,7 +186,7 @@ select, button {
   text-align: center;
   font-size: 36px;
   padding: 3em;
-  background-image: url("../images/music2.jpg");
+  background-color: #fff;
   background-repeat: center repeat;
   background-size: auto 200px;
   width: 100%; }
