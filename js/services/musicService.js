@@ -2,6 +2,7 @@ var app = angular.module('entertainApp');
 
 app.factory('musicService',['$http', function($http){
   var singing = {};
+  
   function passId(query){
     singing = query;
     console.log(singing);

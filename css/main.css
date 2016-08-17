@@ -1,17 +1,14 @@
-@font-face {
-  font-family: 'Poiret One';
-  src: url(../font/PoiretOne-Regular.ttf); }
-
 body {
   padding-top: 70px;
-  background-color: #011A1D;
-  color: #F7FFF6; }
+  background-color: black; }
 
 .nav li {
   display: inline-block;
   font-size: 18px;
-  z-index: 99999999999;
-  color: #A6BDBF; }
+  z-index: 99999999999; }
+
+.wrapper {
+  background-color: #c0c0c0; }
 
 #head {
   text-align: center;
@@ -29,12 +26,19 @@ body {
   z-index: 99999;
   top: 30%;
   left: 22%;
-  color: #F7FFF6;
-  font-family: 'Poiret One', "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace; }
+  color: #F7FFF6; }
 
 #name {
-  font-size: 80px;
-  top: 15%; }
+  font-size: 90px;
+  top: 15%;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.1em; }
+
+#tagline {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.1em;
+  word-spacing: 0.3em;
+  color: #FFCA3A; }
 
 video {
   z-index: -1247;
@@ -54,12 +58,9 @@ video {
 p {
   font-size: 18px; }
 
-.navbar-default {
-  background-color: #020202;
-  border-color: #222222; }
-
-.navbar-default .navbar-brand {
-  color: #B3CBCD; }
+.navbar {
+  background-color: black;
+  /*color: #A6BDBF; */ }
 
 #provider {
   width: 15%;
@@ -67,7 +68,13 @@ p {
   right: 75%; }
 
 a {
-  color: #6D1F1A; }
+  color: #FFEDBC;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.2em; }
+
+a:hover {
+  text-decoration: none;
+  color: red; }
 
 form {
   display: block;
@@ -82,8 +89,11 @@ select, button {
 
 .headLink {
   padding: 1%;
-  background-color: #7e7e7e;
-  text-align: center; }
+  width: auto;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  margin-left: 2.3em; }
 
 #scary {
   text-align: center; }
@@ -99,7 +109,7 @@ select, button {
   width: 10em; }
 
 .text-muted {
-  text-align: right; }
+  text-align: center; }
 
 #musicList {
   text-align: center; }
@@ -147,16 +157,11 @@ select, button {
   width: 20%;
   display: inline; }
 
-#headmusic {
-  background-image: url("../images/music.jpg");
-  background-repeat: no-repeat; }
-
 /*.col-lg-12{
   text-align:center;
   padding:1%;
 }*/
 #head {
-  font-family: 'Volkhov', serif;
   text-align: center;
   font-size: 36px;
   padding: 3em;
@@ -165,30 +170,54 @@ select, button {
   color: #F7FFF6;
   left: 32%; }
 
+#shineMovie {
+  font-size: 72px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.5em; }
+
+#shineMusic {
+  font-size: 72px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.5em; }
+
+#shineBooks {
+  font-size: 72px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.5em; }
+
 #headMovies {
   text-align: center;
   font-size: 36px;
-  padding: 3em;
+  padding: 1em;
   background-image: url("../images/movie_reel.jpg");
-  background-repeat: no-repeat;
-  height: 100% auto;
+  /*background-color: white;*/
+  background-repeat: center;
+  height: 5em;
   overflow: hidden;
   width: 100%; }
 
 #headMusic {
   text-align: center;
   font-size: 36px;
-  padding: 3em;
+  padding: 1em;
   background-image: url("../images/music_keys.jpg");
+  background-repeat: center repeat;
   background-size: auto 200px;
-  width: 100%; }
+  width: 100%;
+  height: 5em; }
 
 #headBooks {
   text-align: center;
   font-size: 36px;
-  padding: 3em;
-  background-image: url("../images/books.jpeg");
-  background-repeat: no-repeat;
-  height: 50% auto;
+  padding: 1em;
+  background-image: url("../images/books.jpg");
+  background-repeat: repeat-x;
+  height: 5em;
   overflow: auto;
-  width: 50%; }
+  width: 100%; }

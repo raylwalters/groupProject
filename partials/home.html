@@ -1,57 +1,48 @@
-<!-- fixed navigation with links to pages and logo with link to homepage -->
-<!-- div with name of app, brief description - picture with opaque overlay -->
-<!-- examples of search results displayed across the screen instead of up and down -->
-
-
 <div class="container-fluid" id="head">
 <div class="row">
 	<div class="col-md-12">
-
-	<div id="textAndImage">
-
+		<div id="textAndImage">
+		</div>
 	</div>
-</div>
 <!-- beginning main informational div on landing page -->
-<div class="row">
-
-	<div class="col-md-12">
-
-		<video loop muted autoplay class="glimmer">
-	<source src="../videos/glimmer.mp4" type="video/mp4"></source></video>
-
-    <div id="text">
-    <h1 id="name">Entertain.Me</h1>
-    <h2>Staying in just became more efficient</h2>
-
-</div>
-    </div>
-
-</div>
-
-</div>
+	<div class="row">
+			<div class="col-md-12">
+				<video loop muted autoplay class="glimmer">
+				<source src="../videos/glimmer.mp4" type="video/mp4"></source></video>
+			    <div id="text">
+				    <h1 id="name">Entertain.Me</h1>
+				    <h2 id="tagline">Staying-in just became more efficient</h2>
+					</div>
+		  	</div>
+		</div>
+	</div>
 </div>
 
 <!-- end main informational div on landing page -->
 
 		<!-- <h3 class="title">Suggestions for you</h3> -->
 
-	</div>
-</div>
+	</div> <!-- closes row of container div -->
+</div> <!-- closes container -->
+
+
 
 	<div class="row">
 		<div class="col-lg-12">
 			<a href="#/movies"><h2 class="headLink">Movies</h2></a>
+
 		<!-- <h4>Movies to Watch</h4> -->
-	</div>
+	<!-- </div> -->
 	</div>
 
-	<div class="row">
-	<div class="col-md-4" ng-repeat='movie in movieShort | limitTo: 3' id="scary">
+	<div class="row" uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+		<div class="col-md-4" uib-slide ng-repeat='movie in movieShort | limitTo: 3' id="scary" index="slide.id">
 			<!-- <h3 class='home-info'>{{movie.title}}</h3> -->
 			<a target=_blank ng-href="https://www.google.com/#q= + {{movie.title}}"><img class="one" ng-src="{{image + movie.poster_path}}" alt="Poster"></a>
+		</div>
+	</div>
+	<hr></hr>
 
-	</div>
-	</div>
 <!-- MUSIC -->
 <div class="row">
 	<div class="col-lg-12">
@@ -66,7 +57,7 @@
 		  <a target=_blank ng-href="{{music.external_urls.spotify}}"><img class="musicPic" ng-src="{{music.images[1].url}}"></img></a>
 		</div>
 	</div>
-
+<hr></hr>
 <!-- BOOKS -->
 <div class="row">
 	<div class="col-lg-12">
@@ -81,98 +72,17 @@
 		</div>
 	</div>
 <!-- </div> -->
+<hr></hr>
 
-<!-- BEGIN SUPERHERO ACTION -->
-<!-- <div class="row" id="superhero">
-	<div class="col-md-12">
-		<h3 class="title">Superhero Action</h3>
-	</div>
-	<div class="col-md-4">
-		<h4>Movies to Watch</h4>
-		<div ng-repeat='movie in movieShort | limitTo: 3'>
-			<h3 class='home-info'>{{movie.title}}</h3>
-			<a target=_blank ng-href="https://www.google.com/#q= + {{movie.title}}"><img class="one" ng-src="{{image + movie.poster_path}}" alt="Poster"></a>
-		</div>
-	</div>
-	<div class="col-md-4">
-		<h4>Playlist to Check Out</h4>
-		<div ng-repeat="music in musicShort | limitTo: 5">
-		  <a target=_blank ng-href="{{music.external_urls.spotify}}"><img class="one" ng-src="{{music.images[2].url}}"></img></a>
-		</div>
-	</div>
-	<div class="col-md-4">
-		<h4>Book to Read</h4>
-		<div ng-repeat='book in bookShort | limitTo: 3'>
-			<h3 class='home-info'>{{book.volumeInfo.title}}</h3>
-			<a target=_blank ng-href="{{book.accessInfo.webReaderLink}}"><img class="one" ng-src="{{book.volumeInfo.imageLinks.smallThumbnail}}" alt="Poster"></a>
-		</div>
-	</div>
-</div> -->
-<!-- END SUPERHERO ACTION -->
 
-<!-- BEGIN DETECTIVE -->
-<!-- <div class="row" id="detective">
-	<div class="col-md-12">
-		<h3 class="title">Detective Thrillers</h3>
-	</div>
-	<div class="col-md-4">
-		<h4>Movies to Watch</h4>
-		<div ng-repeat='movie in movieShort | limitTo: 3'>
-			<h3 class='home-info'>{{movie.title}}</h3>
-			<a target=_blank ng-href="https://www.google.com/#q= + {{movie.title}}"><img class="one" ng-src="{{image + movie.poster_path}}" alt="Poster"></a>
-		</div>
-	</div>
-	<div class="col-md-4">
-		<h4>Playlist to Check Out</h4>
-		<div ng-repeat="music in musicShort | limitTo: 5">
-		  <a target=_blank ng-href="{{music.external_urls.spotify}}"><img class="one" ng-src="{{music.images[2].url}}"></img></a>
-		</div>
-	</div>
-	<div class="col-md-4">
-		<h4>Book to Read</h4>
-		<div ng-repeat='book in bookShort | limitTo: 3'>
-			<h3 class='home-info'>{{book.volumeInfo.title}}</h3>
-			<a target=_blank ng-href="{{book.accessInfo.webReaderLink}}"><img class="one" ng-src="{{book.volumeInfo.imageLinks.smallThumbnail}}" alt="Poster"></a>
-		</div>
-	</div>
-</div> -->
-<!-- END DETECTIVE -->
-
-<!-- beginning of movie/music/book colums -->
-<!-- <div class="row">
-	<div class="col-sm-4">
-		<a href="#/movies"<h2>Movies</h2></a>
-		<div ng-repeat='movie in movieShort | limitTo: 3'>
-
-			<h3 class='home-info'>{{movie.title}}</h3>
-			<a target=_blank ng-href="https://www.google.com/#q= + {{movie.title}}"><img ng-src="{{image + movie.poster_path}}" alt="Poster"></a> -->
-			<!-- <p class='home-info'>{{movie.overview}}</p> -->
-		<!-- </div>
-	</div>
-
-	<div class="col-sm-4">
-		<a href="#/music"<h2>Music</h2></a>
-		<div ng-repeat="music in musicShort | limitTo: 5"> -->
-		   <!-- <p>{{music.name}}</p>  Showing multiple names, not an image for each index-->
-		  <!-- <a target=_blank ng-href="{{music.external_urls.spotify}}"><img ng-src="{{music.images[2].url}}"></img></a>
-		</div>
-	</div>
-
-	<div class="col-sm-4">
-		<a href="#/books"<h2>Books</h2></a>
-		<div ng-repeat='book in bookShort | limitTo: 3'>
-			<h3 class='home-info'>{{book.volumeInfo.title}}</h3>
-			<a target=_blank ng-href="{{book.accessInfo.webReaderLink}}"><img ng-src="{{book.volumeInfo.imageLinks.smallThumbnail}}" alt="Poster"></a> -->
-
-			<!-- <p class='home-info'>{{book.volumeInfo.description}}</p> -->
-		<!-- </div>
-	</div> -->
-<!-- end of movies/music/book columns -->
-
+<br />
+<br />
+<br />
+<br />
 <!-- FOOTER -->
 <div class="row">
   <div class="col-md-12">
-      <p class="text-muted">&copy; 2016 <span class="glyphicon glyphicon-film" aria-hidden="true"></span>
+      <p class="text-muted">C.DuFour K.Golicz R.Walters &copy; 2016	<span class="glyphicon glyphicon-film" aria-hidden="true"></span>
 			</p>
 	</div>
 </div>
