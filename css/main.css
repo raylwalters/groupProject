@@ -196,7 +196,8 @@ select, button {
   text-align: center;
   font-size: 36px;
   padding: 1em;
-  background-image: url("../images/movie-reel.jpg");
+  background-image: url("../images/movie_reel.jpg");
+  /*background-color: white;*/
   background-repeat: center;
   height: 5em;
   overflow: hidden;
@@ -206,7 +207,7 @@ select, button {
   text-align: center;
   font-size: 36px;
   padding: 1em;
-  background-image: url("../images/music2.jpg");
+  background-image: url("../images/music_keys.jpg");
   background-repeat: center repeat;
   background-size: auto 200px;
   width: 100%;
@@ -216,7 +217,7 @@ select, button {
   text-align: center;
   font-size: 36px;
   padding: 1em;
-  background-image: url("../images/books2.jpg");
+  background-image: url("../images/books.jpg");
   background-repeat: repeat-x;
   height: 5em;
   overflow: auto;
