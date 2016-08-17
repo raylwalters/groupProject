@@ -1,13 +1,14 @@
 body {
   padding-top: 70px;
-  background-color: #011A1D;
-  color: #F7FFF6; }
+  background-color: black; }
 
 .nav li {
   display: inline-block;
   font-size: 18px;
-  z-index: 99999999999;
-  color: #A6BDBF; }
+  z-index: 99999999999; }
+
+.wrapper {
+  background-color: #c0c0c0; }
 
 #head {
   text-align: center;
@@ -25,12 +26,16 @@ body {
   z-index: 99999;
   top: 30%;
   left: 22%;
-  color: #F7FFF6;
-  font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace; }
+  color: #F7FFF6; }
 
 #name {
-  font-size: 80px;
-  top: 15%; }
+  font-size: 90px;
+  top: 15%;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.1em; }
+
+#tagline {
+  font-family: 'Poppins', sans-serif; }
 
 video {
   z-index: -1247;
@@ -51,8 +56,8 @@ p {
   font-size: 18px; }
 
 .navbar {
-  background-color: #020202;
-  color: #A6BDBF; }
+  background-color: black;
+  /*color: #A6BDBF; */ }
 
 #provider {
   width: 15%;
@@ -60,7 +65,8 @@ p {
   right: 75%; }
 
 a {
-  color: #6D1F1A; }
+  color: white;
+  font-family: 'Poppins', sans-serif; }
 
 form {
   display: block;
@@ -75,8 +81,9 @@ select, button {
 
 .headLink {
   padding: 1%;
-  background-color: #7e7e7e;
-  text-align: center; }
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: white; }
 
 #scary {
   text-align: center; }
@@ -92,7 +99,7 @@ select, button {
   width: 10em; }
 
 .text-muted {
-  text-align: right; }
+  text-align: center; }
 
 #musicList {
   text-align: center; }
@@ -140,16 +147,11 @@ select, button {
   width: 20%;
   display: inline; }
 
-#headmusic {
-  background-image: url("../images/music.jpg");
-  background-repeat: no-repeat; }
-
 /*.col-lg-12{
   text-align:center;
   padding:1%;
 }*/
 #head {
-  font-family: 'Volkhov', serif;
   text-align: center;
   font-size: 36px;
   padding: 3em;
@@ -161,14 +163,21 @@ select, button {
 #shineMovie {
   font-size: 72px;
   color: white;
-  font-family: 'Poiret One', cursive;
+  font-family: 'Poppins', sans-serif;
   font-weight: bold;
   letter-spacing: 0.5em; }
 
 #shineMusic {
   font-size: 72px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.5em; }
+
+#shineBooks {
+  font-size: 72px;
   color: black;
-  font-family: 'Poiret One', cursive;
+  font-family: 'Poppins', sans-serif;
   font-weight: bold;
   letter-spacing: 0.5em; }
 
@@ -186,7 +195,7 @@ select, button {
   text-align: center;
   font-size: 36px;
   padding: 3em;
-  background-color: #fff;
+  background-image: url("../images/music2.jpg");
   background-repeat: center repeat;
   background-size: auto 200px;
   width: 100%; }
