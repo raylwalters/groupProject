@@ -72,6 +72,10 @@ a {
   font-family: 'Poppins', sans-serif;
   letter-spacing: 0.2em; }
 
+a:hover {
+  text-decoration: none;
+  color: red; }
+
 form {
   display: block;
   color: #D7D5CF;
@@ -85,6 +89,7 @@ select, button {
 
 .headLink {
   padding: 1%;
+  width: auto;
   text-align: left;
   font-family: 'Poppins', sans-serif;
   color: white;
