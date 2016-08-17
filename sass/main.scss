@@ -196,7 +196,6 @@ select, button{
 }
 
 #head {
-  // font-family: 'Volkhov', serif;
   text-align: center;
   font-size: 36px;
   padding: 3em;
@@ -212,6 +211,9 @@ select, button{
 		font-weight: bold;
 		letter-spacing: 0.5em;
 	}
+  h4{
+    color:white;
+  }
 	#shineMusic {
 		font-size: 72px;
 		color: white;

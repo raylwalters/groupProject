@@ -182,6 +182,9 @@ select, button {
   font-weight: bold;
   letter-spacing: 0.5em; }
 
+h4 {
+  color: white; }
+
 #shineMusic {
   font-size: 72px;
   color: white;
