@@ -95,6 +95,11 @@ form{
 }
 button{
   margin:3%;
+  color:#FFEDBC;
+  background-color: white;
+  border-radius:5px;
+  font-family: 'Poppins', sans-serif;
+
 }
 
 label {
@@ -213,6 +218,7 @@ select, button{
   z-index: 9999;
   color: #F7FFF6;
   left: 32%; }
+  width: 100%;
 
 	#shineMovie {
 	  font-size: 72px;

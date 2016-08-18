@@ -78,7 +78,11 @@ form {
   padding: 5%; }
 
 button {
-  margin: 3%; }
+  margin: 3%;
+  color: #FFEDBC;
+  background-color: white;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif; }
 
 label {
   font-size: 32px;
