@@ -1,7 +1,5 @@
 body {
   padding-top: 70px;
-  // background-color: #2A2B2E;
-  // color:#F7FFF6;
 	background-color: black;
  }
 
@@ -9,11 +7,7 @@ body {
   display: inline-block;
   font-size: 18px;
   z-index:99999999999;
-
-  // color:#A6BDBF;
   }
-
-
 
 #head {
 text-align:center;
@@ -240,6 +234,7 @@ select, button{
   z-index: 9999;
   color: #F7FFF6;
   left: 32%; }
+  width: 100%;
 
 	#shineMovie {
 	  font-size: 72px;
