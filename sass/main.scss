@@ -25,17 +25,18 @@ left:32%;
 }
 #textAndImage {
 	text-align:center;
+  margin-right:auto;
+  margin-left:auto;
 }
 #text {
 	position:absolute;
 	z-index:3;
 	top:30%;
-	left:22%;
+	left:25.5%;
 	color:#F7FFF6;
-	// font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
 }
 #name {
-	font-size:90px;
+	font-size:8vw;
 	top:15%;
 	font-family: 'Lobster Two', cursive;
 	letter-spacing: 0.1em;
@@ -43,6 +44,7 @@ left:32%;
 #tagline {
 font-family: 'Poppins', sans-serif;
 letter-spacing: 0.1em;
+font-size:2vw;
 word-spacing: 0.3em;
 color: #FFCA3A;
 
@@ -295,7 +297,6 @@ select, button{
   background-repeat:no-repeat;
   background-size: auto 500px;
   height: 7em;
-  // height: 8.5em;
   width: 100%;
 }
 .wrapper {
@@ -311,3 +312,4 @@ select, button{
 	margin-left: 3em;
 	margin-right: 3em;
 }
+
