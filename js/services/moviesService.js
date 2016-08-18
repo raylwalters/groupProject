@@ -30,7 +30,7 @@ app.factory('movieList',['$http', function($http){
 		console.log(target);
 			return $http({
 
-				url: "https://api.themoviedb.org/3/discover/movie?api_key=f26d8020ab7996e8ae35fa0d465c6732&release_date.lte=2016-05-01&with_genres="+ randomId.id + "&page=" + target,
+				url: "https://api.themoviedb.org/3/discover/movie?api_key=xxxxxx&release_date.lte=2016-05-01&with_genres="+ randomId.id + "&page=" + target,
 				method: "GET"
 			}).then(function(response){
 				console.log(response.data.results);
