@@ -14,14 +14,14 @@
       <form>
           <label for="form-control">Search Artist Keyword</label>
           <input type="text" ng-model="userInfo.id" id="query" value="" class="form-control" />
-          <button type="submit" ng-click="searchAlbums(userInfo)" id="search" value="Search">SEARCH</button>
+          <button type="submit" ng-click="searchAlbums(userInfo)" value="Search">SEARCH</button>
       </form>
   </div>
       <div id="results"></div>
-
-
 </div>
- <div class="musicWrapper">
+
+
+<div class="musicWrapper">
 <div class="row">
   <div class="col-md-4" ng-repeat="music in musicCall">
       <p class="title-box">{{music.name}}</p>
