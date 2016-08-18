@@ -20,7 +20,7 @@ body {
 
 #text {
   position: absolute;
-  z-index: 99999;
+  z-index: 3;
   top: 30%;
   left: 22%;
   color: #F7FFF6; }

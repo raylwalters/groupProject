@@ -28,7 +28,7 @@ left:32%;
 }
 #text {
 	position:absolute;
-	z-index:99999;
+	z-index:3;
 	top:30%;
 	left:22%;
 	color:#F7FFF6;
@@ -38,8 +38,6 @@ left:32%;
 	font-size:90px;
 	top:15%;
 	font-family: 'Lobster Two', cursive;
-	// font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
-
 	letter-spacing: 0.1em;
 }
 #tagline {
@@ -47,6 +45,7 @@ font-family: 'Poppins', sans-serif;
 letter-spacing: 0.1em;
 word-spacing: 0.3em;
 color: #FFCA3A;
+
 }
 video {
 z-index:-1247;

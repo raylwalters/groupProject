@@ -5,7 +5,7 @@ var app = angular.module('entertainApp');
 app.controller('mainCtrl',['$scope','mainMovies','mainBooks','mainMusic', function($scope,mainMovies,mainBooks,mainMusic){
 	mainMovies.data().then(function(response){
 		$scope.movieShort = response.data.results;
-		$scope.image = "http://image.tmdb.org/t/p/w92/";
+		$scope.image = "https://image.tmdb.org/t/p/w92/";
 		console.log(response);
 		console.log($scope.movieShort);
 	});
