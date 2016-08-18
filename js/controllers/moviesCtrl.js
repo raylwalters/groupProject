@@ -15,7 +15,7 @@ app.controller('moviesCtrl',['$scope','movieList', function($scope,movieList){
 		movieList.sendData().then(function(response){
 			$scope.movies = response;
 			// Build image url and store in variable 
-			$scope.image = "http://image.tmdb.org/t/p/w92/";
+			$scope.image = "https://image.tmdb.org/t/p/w92/";
 	});
 
 		

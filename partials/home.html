@@ -35,8 +35,8 @@
 	<!-- </div> -->
 	</div>
 
-	<div class="row" uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
-		<div class="col-md-2" class="moreMovies" uib-slide ng-repeat='movie in movieShort | limitTo: 6' id="scary">
+	<div class="row">
+		<div class="col-md-2" class="moreMovies" ng-repeat='movie in movieShort | limitTo: 6' id="scary">
 			<!-- <h3 class='home-info'>{{movie.title}}</h3> -->
 			<a target=_blank ng-href="https://www.google.com/#q= + {{movie.title}} + trailer"><img class="one" ng-src="{{image + movie.poster_path}}" alt="Poster"></a>
 		</div>
