@@ -45,10 +45,20 @@
 </div>
 
 <div class="row">
-	<div class="col-md-4" ng-repeat="music in musicShort | limitTo: 4" id="playlistImg">
+<!-- 	<div class="col-md-4" ng-repeat="music in musicShort | limitTo: 3" id="playlistImg">
 		  <a target=_blank ng-href="{{music.external_urls.spotify}}"><img class="musicPic" ng-src="{{music.images[1].url}}"></img></a>
-		</div>
+	</div> -->
+	<div class="col-md-4" id="playlistImg">
+		  <a target=_blank ng-href="{{musicShort[0].external_urls.spotify}}"><img class="musicPic" ng-src="{{musicShort[0].images[1].url}}"></img></a>
 	</div>
+	<div class="col-md-4" id="playlistImg">
+		  <a target=_blank ng-href="{{musicShort[1].external_urls.spotify}}"><img class="musicPic" ng-src="{{musicShort[1].images[1].url}}"></img></a>
+	</div>
+	<div class="col-md-4" id="playlistImg">
+		  <a target=_blank ng-href="{{musicShort[3].external_urls.spotify}}"><img class="musicPic" ng-src="{{musicShort[3].images[1].url}}"></img></a>
+	</div>
+
+</div>
 <!-- <hr></hr> -->
 <!-- BOOKS -->
 <div class="row">
