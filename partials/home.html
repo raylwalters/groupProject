@@ -45,7 +45,7 @@
 </div>
 
 <div class="row">
-	<div class="col-md-4" ng-repeat="music in musicShort | limitTo: 3" id="playlistImg">
+	<div class="col-md-4" ng-repeat="music in musicShort | limitTo: 4" id="playlistImg">
 		  <a target=_blank ng-href="{{music.external_urls.spotify}}"><img class="musicPic" ng-src="{{music.images[1].url}}"></img></a>
 		</div>
 	</div>
