@@ -198,6 +198,8 @@ select, button {
 
 .col-md-6 {
   padding: 2%; }
+.col-xs-6 {
+  padding: 2%; }
 
 #movie-logo {
   width: 7%; }
