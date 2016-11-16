@@ -41,20 +41,20 @@
 		<a href="#/music"><h2 class="headLink">Music</h2></a>
 
 	<!-- <h4>Playlist to Check Out</h4> -->
-</div>
+	</div>
 </div>
 
 <div class="row">
 <!-- 	<div class="col-md-4" ng-repeat="music in musicShort | limitTo: 3" id="playlistImg">
 		  <a target=_blank ng-href="{{music.external_urls.spotify}}"><img class="musicPic" ng-src="{{music.images[1].url}}"></img></a>
 	</div> -->
-	<div class="col-md-4" id="playlistImg">
+	<div class="col-xs-4" id="playlistImg">
 		  <a target=_blank ng-href="{{musicShort[0].external_urls.spotify}}"><img class="musicPic" ng-src="{{musicShort[0].images[1].url}}"></img></a>
 	</div>
-	<div class="col-md-4" id="playlistImg">
+	<div class="col-xs-4" id="playlistImg">
 		  <a target=_blank ng-href="{{musicShort[1].external_urls.spotify}}"><img class="musicPic" ng-src="{{musicShort[1].images[1].url}}"></img></a>
 	</div>
-	<div class="col-md-4" id="playlistImg">
+	<div class="col-xs-4" id="playlistImg">
 		  <a target=_blank ng-href="{{musicShort[3].external_urls.spotify}}"><img class="musicPic" ng-src="{{musicShort[3].images[1].url}}"></img></a>
 	</div>
 
@@ -68,7 +68,7 @@
 </div>
 
 <div class="row">
-<div class="col-md-2" ng-repeat='book in bookShort | limitTo: 6' id="bookImg">
+<div class="col-xs-2" ng-repeat='book in bookShort | limitTo: 6' id="bookImg">
 			<!-- <h3 class='home-info'>{{book.volumeInfo.title}}</h3> -->
 			<a target=_blank ng-href="{{book.accessInfo.webReaderLink}}"><img class="one" ng-src="{{book.volumeInfo.imageLinks.smallThumbnail}}" alt="Poster"></a>
 		</div>
