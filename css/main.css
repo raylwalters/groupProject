@@ -175,7 +175,7 @@ select, button {
 /*Movie CSS*/
 .box {
   width: 70%;
-  height: 160px;
+  height: 120px;
   font-size: 18px;
   letter-spacing: 0.05em;
   overflow: scroll;
