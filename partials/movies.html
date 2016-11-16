@@ -24,7 +24,7 @@
 <div class="row">
 	<div class="col-xs-6" ng-repeat="movie in movies | orderBy:'title'">
 		<h3 class="title-box">{{movie.title}}</h3>
-		<a target=_blank ng-href="https://www.google.com/#q= + {{movie.title}} + trailer"><img ng-src="{{image + movie.poster_path}}" class="one" alt="Poster"></a>
+		<a class="bookLeft" target=_blank ng-href="https://www.google.com/#q= + {{movie.title}} + trailer"><img ng-src="{{image + movie.poster_path}}" alt="Poster"></a>
 		<p class="bookScroll">{{movie.overview}}</p>
 	</div>
 </div>
