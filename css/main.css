@@ -136,7 +136,9 @@ select, button {
 
 .one {
   height: 15em;
-  width: 10em; }
+  width: 10em;
+  float: left;
+  clear: left; }
 
 .text-muted {
   text-align: right; }
