@@ -20,7 +20,7 @@
 
 <div class="wrapper">
 <div class="row" id="bookList">
-  <div class="col-md-6" ng-repeat="book in books">
+  <div class="col-xs-6" ng-repeat="book in books">
     <h3 class="book-title">{{book.volumeInfo.title}}</h3>
     <h4 class="bookLeft">{{book.volumeInfo.authors[0]}}</h4>
         <a class="bookLeft" target=_blank ng-href="{{book.accessInfo.webReaderLink}}"><img class="two" ng-src="{{book.volumeInfo.imageLinks.smallThumbnail}}" alt="Sup"></a>
